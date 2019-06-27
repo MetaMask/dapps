@@ -1,0 +1,21 @@
+.autocomplete {
+    position: absolute;
+    top: 180px;
+    z-index: 999999;
+    height: 42px;
+    left: 16px;
+    right: 16px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+}
+
+.autocomplete-input {
+    width: 100%;
+    outline-width: 0;
+    border: 0px;
+    -webkit-appearance: none;
+}

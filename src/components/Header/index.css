@@ -1,0 +1,20 @@
+.header {
+    z-index: 0;
+    height: 200px;
+    display: flex;
+    flex: 1;
+    align-items: 'flex-end';
+    justify-content: 'flex-end';
+    background: #FFF6EF;
+    margin-bottom: 50px;
+}
+
+.header .bg-img{
+    display: flex;
+    flex: 1;
+    height: 120px;
+    align-self: 'flex-end';
+    justify-self: 'flex-end';
+    margin-top: 80px;
+}
+

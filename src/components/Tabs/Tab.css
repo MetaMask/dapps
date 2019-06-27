@@ -1,0 +1,15 @@
+.tab-list-item {
+    list-style: none;
+    margin-bottom: -1px;
+    padding: 0.5rem 0.75rem;
+    color: #6A737D;
+    font-size: 14px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+  
+.tab-list-active {
+    border-bottom: 2px solid #037DD6;
+    color: #037DD6;
+}

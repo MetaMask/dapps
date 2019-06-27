@@ -1,0 +1,9 @@
+.explore-dapps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    align-content: space-between;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+}

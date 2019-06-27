@@ -1,0 +1,74 @@
+.take-a-tour-wrapper {
+    position: relative;
+    display: flex;
+    flex: 1;
+    margin-bottom: 170px;
+}
+
+.take-a-tour {
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    height: 48px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 16px;
+}
+
+.take-a-tour-logo {
+    margin-right: 16px;
+    width: 38px;
+    height: 38px;
+    padding: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.take-a-tour-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+
+.take-a-tour-content h3{
+    display: flex;
+    flex: 1;
+    color: #24292E;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 5px;
+}
+
+.take-a-tour-content p{
+    display: flex;
+    flex: 1;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: #24292E;
+    text-align: left;
+    margin-top: 0px;
+}
+
+.take-a-tour-close {    
+    width: 16px;
+    height: 16px;
+    padding: 5px;
+    position: absolute;
+    right: 22px;
+    top: 8px;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+}

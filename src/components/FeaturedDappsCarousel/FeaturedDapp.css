@@ -1,0 +1,40 @@
+
+.featured-dapp {
+    /* White */
+    display: flex;
+    flex:1;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    text-decoration: none;
+
+}
+
+.featured-dapp-box{
+    height: 65px;
+    width: 65px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-dapp-logo {
+    height: 38px;
+    width: 38px;
+    margin-top: 13px;
+}
+
+.featured-dapp-name {
+    margin-top: 12px;
+    width: 65px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+}
+
