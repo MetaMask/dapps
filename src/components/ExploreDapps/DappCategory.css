@@ -4,6 +4,7 @@
 .dapp-category{
     display: flex;
     width: 150px;
+    min-width: 47%;
     height: 64px;
     margin-bottom: 15px;
     margin-right: 15px;
@@ -14,6 +15,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+}
+
+.dapp-category:nth-child(even) {
+    margin-right: 0px;
+}
+
+.dapp-category:active{
+    opacity: 0.5
 }
 
 .dapp-category-icon {

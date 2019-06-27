@@ -2,3 +2,7 @@
   font-family: 'Roboto', sans-serif;
   background-color: #f5f7f8;
 }
+
+a {
+  text-decoration: none;
+}

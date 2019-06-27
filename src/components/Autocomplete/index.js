@@ -4,7 +4,7 @@ import './index.css';
 export default class Autocomplete extends Component {
     render(){
         return (
-            <div class={'autocomplete'}>
+            <div className={'autocomplete'}>
                 <input type={'text'} 
                     placeholder={'Search or Type URL'} 
                     className={'autocomplete-input'}

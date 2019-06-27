@@ -9,7 +9,10 @@ export default class ExploreDapps extends Component {
             <div className={'explore-dapps'}> 
                 { 
                     allDapps.map( dapp => (
-                        <DappCategory data={dapp} />
+                        <DappCategory 
+                            data={dapp}
+                            key={dapp.name}
+                        />
                     ))
                 }
             </div>

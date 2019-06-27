@@ -14,7 +14,10 @@ export default class FeaturedDappsCarousel extends Component {
                     <div className={'featured-dapps-carousel'}>
                         { 
                             featuredDapps.map( dapp => (
-                                <FeaturedDapp data={dapp} />
+                                <FeaturedDapp 
+                                    data={dapp}
+                                    key={dapp.url}
+                                />
                             ))
                         }
                     </div>
