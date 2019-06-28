@@ -7,7 +7,7 @@ import './DappCategory.css';
 export default class DappCategory extends Component {
     render(){
         const { name, icon, color } = this.props.data;
-        const url = `categories/${name.toLowerCase().replace(" ", "-")}`;
+        const url = `/${name.toLowerCase().replace(" ", "-")}`;
         
         return (
             // eslint-disable-next-line jsx-a11y/anchor-is-valid

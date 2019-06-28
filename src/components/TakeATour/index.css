@@ -67,9 +67,12 @@
     height: 16px;
     padding: 5px;
     position: absolute;
-    right: 22px;
-    top: 8px;
+    right: 0px;
+    margin-right: 22px;
+    margin-top: 10px;
     text-align: center;
-    justify-content: center;
-    align-self: center;
+    background-color: transparent;
+    display: block;
+    box-sizing: content-box;
+    border: 0px;
 }

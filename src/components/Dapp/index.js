@@ -17,7 +17,7 @@ export default class Dapp extends Component {
                 <div className='dapp-content'>
                     <p className={'dapp-name'} >{name}</p>
                     <p className={'dapp-desc'} >{description}</p>
-                    <a href={url} className={'dapp-url'} >{url}</a>
+                    <span className={'dapp-url'} >{url}</span>
                 </div>
             </a>
             );

@@ -5,7 +5,8 @@
     flex:1;
     align-items: center;
     flex-direction: column;
-    margin-right: 20px;
+    padding-right: 20px;
+    box-sizing: content-box;
     text-decoration: none;
 }
 
@@ -42,4 +43,5 @@
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
+
 
