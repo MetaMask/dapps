@@ -1,6 +1,6 @@
 .autocomplete {
     position: absolute;
-    top: 180px;
+    top: 163px;
     z-index: 999999;
     height: 42px;
     left: 16px;
@@ -15,6 +15,7 @@
 
 .autocomplete-input {
     width: 100%;
+    font-size: 16px;
     outline-width: 0;
     border: 0px;
     -webkit-appearance: none;

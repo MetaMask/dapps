@@ -1,6 +1,14 @@
+body {
+  background-color: #f5f7f8;
+}
+
 .App {
   font-family: 'Roboto', sans-serif;
   background-color: #f5f7f8;
+  padding-bottom: 65px;
+  max-width: 768px;
+  margin: auto;
+  position: relative;
 }
 
 a {

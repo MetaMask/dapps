@@ -1,0 +1,7 @@
+.favorites {
+    min-height: 255px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}

@@ -11,19 +11,20 @@
 }
 
 .featured-dapps-carousel-wrapper {
-    overflow-y: hidden;
-    height: 100px;
+    overflow-x: hidden;
+    height: 102px;
 }
 
 .featured-dapps-carousel {
     display: flex;
     flex: 1;
     flex-direction: row;
-    overflow: auto;
+    overflow-x: scroll;
     width: 100%;
     padding-top: 10px;
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 20px;
     -webkit-overflow-scrolling: touch;
+    box-sizing: content-box; 
 }

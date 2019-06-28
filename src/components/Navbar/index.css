@@ -3,14 +3,19 @@
     display: flex;
     flex: 1;
     flex-direction: row;
+    margin-bottom: 15px;
 }
 .navbar-back {
     position: absolute;
-    margin: 20px;
+    margin: 16px;
+    border: 0px;
+    background-color: transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .navbar h1{
-    margin-top: 20px;
+    margin-top: 18px;
     display: flex;
     flex: 1;
     font-style: normal;

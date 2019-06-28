@@ -6,4 +6,5 @@
     align-content: space-between;
     padding-bottom: 18px;
     flex-wrap: wrap;
+    flex: 1;
 }

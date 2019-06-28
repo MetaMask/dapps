@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar/';
+import Dapp from '../components/Dapp/';
 import allDapps from '../data/all-dapps';
 
 export default class Category extends Component {
@@ -12,6 +13,7 @@ export default class Category extends Component {
         const category = allDapps.find((cat) => (
             cat.name.toLowerCase().replace(" ", "-") === this.props.match.params.category
         ));
+        
         if(category){
             this.setState({category});
         }
@@ -20,11 +22,15 @@ export default class Category extends Component {
 
 
     render(){
-        const { name } = this.state.category || {};
+        const { category } = this.state || {};
+        if(!category) return null;
         return (
             <div>
-                <Navbar title={name} />
-                
+                <Navbar title={category.name} />
+                {   category.dapps.map( dapp => (
+                        <Dapp data={dapp} key={dapp.url} />
+                    ))
+                }
             </div>
         );
     }

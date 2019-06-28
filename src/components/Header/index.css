@@ -1,20 +1,30 @@
 .header {
     z-index: 0;
-    height: 200px;
+    height: 170px;
     display: flex;
     flex: 1;
-    align-items: 'flex-end';
-    justify-content: 'flex-end';
-    background: #FFF6EF;
-    margin-bottom: 50px;
+    background: #E9F2FF;
+    margin-bottom: 55px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
 }
 
 .header .bg-img{
-    display: flex;
-    flex: 1;
-    height: 120px;
-    align-self: 'flex-end';
-    justify-self: 'flex-end';
-    margin-top: 80px;
+    height: 170px;
+    margin-top: 85px;
+}
+
+.header .logo-img{
+    background-color: transparent;
+    position: absolute;
+    height: 66px;
+    width: 102px;
+    z-index: 999999999;
+    align-self: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 
