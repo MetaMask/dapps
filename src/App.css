@@ -6,7 +6,7 @@ body {
 .App {
   font-family: 'Roboto', sans-serif;
   background-color: #f5f7f8;
-  padding-bottom: 65px;
+  padding-bottom: 0px;
   max-width: 768px;
   margin: auto;
   position: relative;
@@ -35,4 +35,9 @@ button:active {
   width: 100%;
   height: 0;
   z-index: 99999999;
+}
+
+.category-wrapper {
+  margin-left: 15px;
+  margin-right: 15px;
 }

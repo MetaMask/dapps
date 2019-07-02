@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Tab from './Tab';
 
-import './Tabs.css';
+import './index.css';
 
 export default class Tabs extends Component {
   static propTypes = {

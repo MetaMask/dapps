@@ -13,6 +13,11 @@ export default class TakeATour extends Component {
         this.setState({hideTutorialBanner: true});
     }
 
+    showTutorial = (e) => {
+        e.preventDefault();
+        window.ethereum.send('metamask_showTutorial');
+    }
+
     render(){
         if(this.state.hideTutorialBanner) return null;
         
@@ -21,6 +26,7 @@ export default class TakeATour extends Component {
                 <a 
                     className={'take-a-tour'}
                     href={'#metamask-tutorial'}
+                    onClick={this.showTutorial}
                 >
                     <img src={logo} className={'take-a-tour-logo'} alt={'MetaMask logo'}/>
                     <div className={'take-a-tour-content'}>

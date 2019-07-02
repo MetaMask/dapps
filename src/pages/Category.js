@@ -27,10 +27,12 @@ export default class Category extends Component {
         return (
             <div>
                 <Navbar title={category.name} />
+                <div className={'category-wrapper'}>
                 {   category.dapps.map( dapp => (
                         <Dapp data={dapp} key={dapp.url} />
                     ))
                 }
+                </div>
             </div>
         );
     }
