@@ -11,8 +11,6 @@ export default class Favorites extends Component {
     componentDidMount(){
         if(window.__mmFavorites){
             this.setState({ favorites: window.__mmFavorites });
-        } else {
-            alert('NO FAVS :(');
         }
     }
     
