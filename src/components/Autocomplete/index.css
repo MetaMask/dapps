@@ -19,4 +19,5 @@
     outline-width: 0;
     border: 0px;
     -webkit-appearance: none;
+    text-transform: lowercase;
 }
