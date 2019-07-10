@@ -11,6 +11,11 @@ export default class Autocomplete extends Component {
         this.setState({value: event.target.value});
     }
 
+    onFocus = (event) => {
+        event.preventDefault();
+        window.ethereum.send('metamask_showAutocomplete');
+    };
+
     handleSubmit = (event) => {
         event.preventDefault();
         const searchEngine = window.__mmSearchEngine || 'DuckDuckGo';
@@ -31,6 +36,7 @@ export default class Autocomplete extends Component {
                     className={'autocomplete-input'}
                     value={this.state.value}
                     onChange={this.handleChange} 
+                    onFocus={this.onFocus}
                 />
             </form>
         );
