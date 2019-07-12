@@ -10,13 +10,13 @@ export default class Favorites extends Component {
 
     componentDidMount(){
         if(window.__mmFavorites){
-            this.setState({ favorites: window.__mmFavorites });
+            this.setState({ favorites: window.__mmFavorites.reverse() });
         }
     }
     
     onClose = async (url) => {
         const { favorites } = await window.ethereum.send('metamask_removeFavorite', [url]);
-        this.setState({ favorites });
+        this.setState({ favorites: favorites.reverse() });
     }
 
     renderFavorites(){
