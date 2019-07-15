@@ -9,7 +9,7 @@ export default class FeaturedDappsCarousel extends Component {
     render(){
         return (
             <div className={'featured-dapps'}>
-                <h2 className={'featured-dapps-title'}>Featured Dapps</h2>
+                <h2 className={'featured-dapps-title'}>Featured Projects</h2>
                 <div className={'featured-dapps-carousel-wrapper'}>
                     <div className={'featured-dapps-carousel'}>
                         { 

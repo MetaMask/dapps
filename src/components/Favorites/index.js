@@ -44,7 +44,7 @@ export default class Favorites extends Component {
     renderEmpty(){
         return (
             <div className={'favorites-empty'}>
-                <p>You have no favorite Dapps yet</p>
+                <p>You have no favorite yet</p>
             </div>
         );
     }

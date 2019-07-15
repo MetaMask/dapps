@@ -15,7 +15,7 @@ export default class Home extends Component {
                 <Autocomplete />
                 <FeaturedDappsCarousel />
                 <Tabs>
-                    <div label="Explore Dapps">
+                    <div label="Explore">
                         <ExploreDapps />
                     </div>
                     <div label="Favorites">

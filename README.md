@@ -1,4 +1,4 @@
-# dapps.metamask.io
+# home.metamask.io
 
 ## Contributing
 
