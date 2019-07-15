@@ -258,6 +258,12 @@ const categories =  [
                 description: 'A decentralized trading platform',
                 icon: './images/dapps/forkdelta.app.png'
             },
+            {
+                name: 'CoinGecko',
+                url: 'https://www.coingecko.com/en',
+                description: '360° Market Overview of Coins & Cryptocurrencies',
+                icon: './images/dapps/coingecko.com.png'
+            },
         ],
     },
     {
