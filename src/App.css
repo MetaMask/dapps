@@ -48,3 +48,15 @@ button:active {
   margin-right: 15px;
   padding-bottom: 15px;
 }
+
+@media only screen and (max-width: 321px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .dapp-category {
+    width: 136px;
+    min-width: 0%;
+  }
+
+}
