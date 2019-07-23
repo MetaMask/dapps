@@ -209,7 +209,7 @@ const categories =  [
                 icon: './images/dapps/uniswap.exchange.png'
             },
             {
-                name: 'Airswap',
+                name: 'AirSwap',
                 url: 'https://instant.airswap.io/',
                 description: 'Find Tokens, Get Best Prices, & Make Instant Trades',
                 icon: './images/dapps/instant.airswap.io.png'
