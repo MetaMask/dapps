@@ -233,30 +233,10 @@ const categories =  [
                 icon: './images/dapps/dharma.io.png'
             },
             {
-                name: 'Idex',
-                url: 'https://idex.market/eth/plu',
-                description: 'Popular decentralized exchange',
-                icon: './images/dapps/idex.market.png'
-            },
-            {
-                name: 'Kyber',
-                url: 'https://kyber.network/',
+                name: 'Kyber Swap',
+                url: 'https://kyberswap.com/',
                 description: 'A simple way to exchange tokens',
                 icon: './images/dapps/kyber.network.png'
-            },
-            // Currently having problems with thumbnail
-            // 
-            // {
-            //     name: 'Bancor',
-            //     url: 'https://www.bancor.network/',
-            //     description: 'A simple way to exchange tokens',
-            //     icon: './images/dapps/www.bancor.network.png'
-            // },
-            {
-                name: 'Fork Delta',
-                url: 'https://forkdelta.app/',
-                description: 'A decentralized trading platform',
-                icon: './images/dapps/forkdelta.app.png'
             },
             {
                 name: 'CoinGecko',
