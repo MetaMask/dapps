@@ -244,6 +244,12 @@ const categories =  [
                 description: '360° Market Overview of Coins & Cryptocurrencies',
                 icon: './images/dapps/coingecko.com.png'
             },
+	    {
+                name: 'Zerion',
+                url: 'https://beta.zerion.io/',
+                description: 'Zerion is your gateway to DeFi. Watch the portfolio, trade, lend and borrow assets in a single place!',
+                icon: './images/dapps/zerion.png'
+            }
         ],
     },
     {
