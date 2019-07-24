@@ -244,6 +244,12 @@ const categories =  [
                 description: '360° Market Overview of Coins & Cryptocurrencies',
                 icon: './images/dapps/coingecko.com.png'
             },
+            {
+                name: 'Bidali',
+                url: 'https://commerce.bidali.com/dapp',
+                description: 'Buy from hundreds of top brands with crypto',
+                icon: './images/dapps/bidali.com.png'
+            }
         ],
     },
     {
