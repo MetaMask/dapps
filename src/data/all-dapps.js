@@ -96,7 +96,7 @@ const categories =  [
                 icon: './images/dapps/cryptokitties.co.png'
             },
         //   Currently having problems with thumbnail
-        //   
+        //
         //    {
         //         name: 'Snail Farm',
         //         url: 'https://snailking.github.io/snailfarm3/',
@@ -133,7 +133,7 @@ const categories =  [
                 description: 'Classic games run on open source contracts that pay ETH',
                 icon: './images/dapps/dice2.win.png'
             },
-            
+
         ],
     },
     {
@@ -239,11 +239,11 @@ const categories =  [
                 icon: './images/dapps/kyber.network.png'
             },
             {
-                name: 'CoinGecko',
-                url: 'https://www.coingecko.com/en',
-                description: '360° Market Overview of Coins & Cryptocurrencies',
-                icon: './images/dapps/coingecko.com.png'
-            },
+                name: 'Fulcrum',
+                url: 'https://fulcrum.trade/',
+                description: 'DeFi Crypto Margin Trading Platform',
+                icon: './images/dapps/fulcrum.app.png'
+            }
         ],
     },
     {
@@ -274,6 +274,12 @@ const categories =  [
                 url: 'https://www.coindesk.com/',
                 description: 'Blockchain news',
                 icon: './images/dapps/coindesk.com.png'
+            },
+            {
+                name: 'CoinGecko',
+                url: 'https://www.coingecko.com/en',
+                description: '360° Market Overview of Coins & Cryptocurrencies',
+                icon: './images/dapps/coingecko.com.png'
             },
         ],
     }
