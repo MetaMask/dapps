@@ -244,6 +244,12 @@ const categories =  [
                 description: '360° Market Overview of Coins & Cryptocurrencies',
                 icon: './images/dapps/coingecko.com.png'
             },
+         	{
+                name: 'EXNCE',
+                url: 'https://www.exnce.com/',
+                description: 'Are you looking for free crypto airdrops? Try exnce.com! EXNCE airdrop is your free access to new token projects.',
+                icon: './images/dapps/exnce.com.png'
+            },			
         ],
     },
     {
