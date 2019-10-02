@@ -133,6 +133,12 @@ const categories =  [
                 description: 'Classic games run on open source contracts that pay ETH',
                 icon: './images/dapps/dice2.win.png'
             },
+            {
+                name: 'EthBattle',
+                url: 'https://ethbattle.io/',
+                description: 'Crypto game where humans play against CPU and get rewarded in ETH',
+                icon: './images/dapps/ethbattle.io.png'
+            }
             
         ],
     },
