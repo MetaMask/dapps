@@ -66,7 +66,7 @@ const categories =  [
             },
             {
                 name: 'Pool Together',
-                url: 'https://www.pooltogether.us/',
+                url: 'https://app.pooltogether.us/',
                 description: 'Pool your ETH and get a chance to win the interest',
                 icon: './images/dapps/pooltogether.us.png'
             },
