@@ -65,9 +65,9 @@ const categories =  [
                 icon: './images/dapps/gitcoin.co.png'
             },
             {
-                name: 'Pool Together',
+                name: 'PoolTogether',
                 url: 'https://www.pooltogether.us/',
-                description: 'Pool your ETH and get a chance to win the interest',
+                description: 'PoolTogether is a prize-linked savings account. By saving money you have a chance to win prizes.',
                 icon: './images/dapps/pooltogether.us.png'
             },
         ],
@@ -96,7 +96,7 @@ const categories =  [
                 icon: './images/dapps/cryptokitties.co.png'
             },
         //   Currently having problems with thumbnail
-        //   
+        //
         //    {
         //         name: 'Snail Farm',
         //         url: 'https://snailking.github.io/snailfarm3/',
@@ -133,7 +133,7 @@ const categories =  [
                 description: 'Classic games run on open source contracts that pay ETH',
                 icon: './images/dapps/dice2.win.png'
             },
-            
+
         ],
     },
     {
