@@ -30,7 +30,7 @@ export default class Autocomplete extends Component {
                 onSubmit={this.handleSubmit}
             >
                 <input
-                    autocapitalize="none"
+                    autoCapitalize="none"
                     type={'text'} 
                     placeholder={'Search or Type URL'} 
                     className={'autocomplete-input'}

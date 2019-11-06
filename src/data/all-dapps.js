@@ -67,7 +67,7 @@ const categories =  [
             {
                 name: 'PoolTogether',
                 url: 'https://app.pooltogether.us/',
-                description: 'PoolTogether is a prize-linked savings account. By saving money you have a chance to win prizes.',
+                description: 'A prize-linked savings account. By saving money you have a chance to win prizes.',
                 icon: './images/dapps/pooltogether.us.png'
             },
         ],
@@ -116,16 +116,16 @@ const categories =  [
                 icon: './images/dapps/blockchaincuties.com.png'
             },
             {
-                name: 'World War Goo',
-                url: 'https://ethergoo.io/',
-                description: 'A competitive crypto idle game',
-                icon: './images/dapps/ethergoo.io.png'
-            },
-            {
                 name: 'MLB Champions',
                 url: 'https://mlbcryptobaseball.com/welcome',
                 description: 'Collect official MLB Digital Figures',
                 icon: './images/dapps/mlbcryptobaseball.com.png'
+            },
+            {
+                name: 'F1® Delta Time',
+                url: 'https://www.f1deltatime.com/',
+                description: 'This game centres around the collection and trading of unique Cars, Drivers & Components',
+                icon: './images/dapps/f1deltatime.com.png'
             },
             {
                 name: 'Dice 2 Win',
@@ -133,7 +133,12 @@ const categories =  [
                 description: 'Classic games run on open source contracts that pay ETH',
                 icon: './images/dapps/dice2.win.png'
             },
-
+            {
+                name: 'World War Goo',
+                url: 'https://ethergoo.io/',
+                description: 'A competitive crypto idle game',
+                icon: './images/dapps/ethergoo.io.png'
+            }
         ],
     },
     {
