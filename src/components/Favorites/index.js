@@ -12,6 +12,15 @@ export default class Favorites extends Component {
         if(window.__mmFavorites){
             this.setState({ favorites: window.__mmFavorites.reverse() });
         }
+        
+        window.addEventListener('message', ({ data }) => {
+            if(data === 'updateFavorites'){
+                if(window.__mmFavorites){
+                    this.setState({ favorites: window.__mmFavorites.reverse() });
+                }
+            }
+        });
+
     }
     
     onClose = async (url) => {
