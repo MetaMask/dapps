@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
+import trackEvent from '../../util/analytics';
 import Tab from './Tab';
 
 import './index.css';
-import { trackEvent } from '../../util/analytics';
 
 export default class Tabs extends Component {
   static propTypes = {

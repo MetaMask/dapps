@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import onUrlSubmit from '../../util/browser';
 import './index.css';
-import { trackEvent } from '../../util/analytics';
+import trackEvent from '../../util/analytics';
 
 export default class Autocomplete extends Component {
     state = {

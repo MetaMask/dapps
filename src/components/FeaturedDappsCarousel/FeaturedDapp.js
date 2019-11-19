@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
 import './FeaturedDapp.css';
-import { trackEvent } from '../../util/analytics';
+import trackEvent from '../../util/analytics';
 
 export default class FeaturedDapp extends Component {
 
-    track = () => {
+    track = (e) => {
         trackEvent('Click', { 
             'featured-dapp' : this.props.data.shortName,
             'url' : this.props.data.url,
             'position': this.props.position + 1
         });
+        window.location.href = this.props.data.url;
     }
 
     render(){
@@ -18,7 +19,7 @@ export default class FeaturedDapp extends Component {
             <a
                 className={'featured-dapp'}
                 href={url}
-                onclick={this.track}
+                onClick={this.track}
             >
                 <span className={'featured-dapp-box'}>
                     <img 

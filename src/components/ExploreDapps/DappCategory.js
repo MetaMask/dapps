@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { trackEvent } from '../../util/analytics';
+import trackEvent from '../../util/analytics';
+
 import './DappCategory.css';
 
 export default class DappCategory extends Component {
