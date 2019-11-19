@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './index.css';
 import { getHost } from '../../util/browser';
 import Dapp from '../Dapp';
+import './index.css';
 
 export default class Favorites extends Component {
     state = {

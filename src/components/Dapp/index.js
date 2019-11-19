@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import closeIcon from '../../images/close-icon.svg';
-import './index.css';
 import { trackEvent } from '../../util/analytics';
+import './index.css';
 
 export default class Dapp extends Component {
 
