@@ -2,9 +2,17 @@ import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import trackEvent from '../../util/analytics';
+
 import './DappCategory.css';
 
 export default class DappCategory extends Component {
+    track = () => {
+        trackEvent('Click', { 
+            'dapp-category' : this.props.data.name,
+        });
+    }
+
     render(){
         const { name, icon, color } = this.props.data;
         const url = `/${name.toLowerCase().replace(" ", "-")}`;
@@ -14,6 +22,7 @@ export default class DappCategory extends Component {
             <Link
                 className={'dapp-category'}
                 to={url}
+                onClick={this.track}
             >
                 <FontAwesomeIcon
                     className={'dapp-category-icon'}    

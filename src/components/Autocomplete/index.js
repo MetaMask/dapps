@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import onUrlSubmit from '../../util/browser';
 import './index.css';
+import trackEvent from '../../util/analytics';
 
 export default class Autocomplete extends Component {
     state = {
@@ -14,6 +15,7 @@ export default class Autocomplete extends Component {
     onFocus = (event) => {
         event.preventDefault();
         window.ethereum.send('metamask_showAutocomplete');
+        trackEvent('Autocomplete focus');
     };
 
     handleSubmit = (event) => {

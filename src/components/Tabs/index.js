@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
+import trackEvent from '../../util/analytics';
 import Tab from './Tab';
 
 import './index.css';
@@ -20,6 +20,7 @@ export default class Tabs extends Component {
 
   onTabSelected = (tab) => {
     this.setState({ activeTab: tab });
+    trackEvent('Click', { 'Homepage Tab' : tab});
   }
 
   render() {

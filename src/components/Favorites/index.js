@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './index.css';
 import { getHost } from '../../util/browser';
 import Dapp from '../Dapp';
+import './index.css';
 
 export default class Favorites extends Component {
     state = {
@@ -32,7 +32,7 @@ export default class Favorites extends Component {
         return (
             <div className={'favorites'}>
             { 
-                this.state.favorites.map( dapp => (
+                this.state.favorites.map( (dapp, i) => (
                     <Dapp 
                         data={{
                             ...dapp,
@@ -43,6 +43,7 @@ export default class Favorites extends Component {
                         size={'small'}
                         closable
                         onClose={this.onClose}
+                        position={i}
                     />
                 ))
             }
