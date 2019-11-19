@@ -7,6 +7,7 @@ export default class FeaturedDapp extends Component {
     track = () => {
         trackEvent('Click', { 
             'featured-dapp' : this.props.data.shortName,
+            'url' : this.props.data.url,
             'position': this.props.position + 1
         });
     }
