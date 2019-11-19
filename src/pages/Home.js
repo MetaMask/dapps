@@ -6,8 +6,14 @@ import FeaturedDappsCarousel from '../components/FeaturedDappsCarousel/';
 import ExploreDapps from '../components/ExploreDapps/';
 import Favorites from '../components/Favorites/';
 import TakeATour from '../components/TakeATour/';
+import trackEvent from '../util/analytics';
 
 export default class Home extends Component {
+
+    componentDidMount(){
+        trackEvent('Impression', {'page': 'home'});
+    }
+
     render(){
         return (
             <div>

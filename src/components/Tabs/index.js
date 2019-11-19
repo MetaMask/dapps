@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Tab from './Tab';
 
 import './index.css';
+import { trackEvent } from '../../util/analytics';
 
 export default class Tabs extends Component {
   static propTypes = {
@@ -20,6 +21,7 @@ export default class Tabs extends Component {
 
   onTabSelected = (tab) => {
     this.setState({ activeTab: tab });
+    trackEvent('Click', { 'Homepage Tab' : tab});
   }
 
   render() {

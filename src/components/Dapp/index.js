@@ -1,8 +1,17 @@
 import React, { Component } from 'react'
 import closeIcon from '../../images/close-icon.svg';
 import './index.css';
+import { trackEvent } from '../../util/analytics';
 
 export default class Dapp extends Component {
+
+    track = () => {
+        trackEvent('Click', { 
+            'dapp' : this.props.data.name,
+            'url': this.props.data.url,
+            'position': this.props.position + 1
+        });
+    }
 
     renderDescription = (description) => {
         return description && (<p className={'dapp-desc'} >{description}</p>)
@@ -12,6 +21,7 @@ export default class Dapp extends Component {
         e.preventDefault();
         this.props.onClose(this.props.data.url);
     }
+    
 
     render(){
         const { size, closable, data: { name, description, url, icon }} = this.props;
@@ -19,6 +29,7 @@ export default class Dapp extends Component {
             <a
                 className={'dapp'}
                 href={url}
+                onClick={this.track}
             >
                 <img 
                     src={icon} 

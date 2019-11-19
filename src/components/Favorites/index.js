@@ -32,7 +32,7 @@ export default class Favorites extends Component {
         return (
             <div className={'favorites'}>
             { 
-                this.state.favorites.map( dapp => (
+                this.state.favorites.map( (dapp, i) => (
                     <Dapp 
                         data={{
                             ...dapp,
@@ -43,6 +43,7 @@ export default class Favorites extends Component {
                         size={'small'}
                         closable
                         onClose={this.onClose}
+                        position={i}
                     />
                 ))
             }
