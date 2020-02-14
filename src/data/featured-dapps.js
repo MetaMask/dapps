@@ -7,13 +7,6 @@ export default [
 		icon: './images/dapps/uniswap.exchange.png'
 	},
 	{
-		url: 'https://explorer.bounties.network/explorer',
-		name: 'The Bounties Network',
-		shortName: 'Bounties',
-		description: 'Find freelancers and bounty programs for any task paid in any token on Ethereum.',
-		icon: './images/dapps/bounties.network.png'
-	},
-	{
 		url: 'https://peepeth.com/_',
 		name: 'Peepeth',
 		shortName: 'Peepeth',

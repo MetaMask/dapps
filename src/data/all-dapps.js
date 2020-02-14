@@ -47,12 +47,6 @@ const categories =  [
         color: '#E06470',
         dapps: [
             {
-                name: 'The Bounties Network',
-                url: 'https://bounties.network/',
-                description: 'Get paid for doing work in any domain',
-                icon: './images/dapps/bounties.network.png'
-            },
-            {
                 name: 'Cent',
                 url: 'https://beta.cent.co/',
                 description: 'Earn ETH by creating content',
