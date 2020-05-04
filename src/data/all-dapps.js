@@ -147,12 +147,6 @@ const categories =  [
                 icon: './images/dapps/3box.io.png'
             },
             {
-                name: 'Peepeth',
-                url: 'https://peepeth.com/welcome',
-                description: 'A blockchain-powered social network',
-                icon: './images/dapps/peepeth.com.png'
-            },
-            {
                 name: 'Kauri',
                 url: 'https://kauri.io/',
                 description: 'Ethereum dev content in a decentralized knowledge base',

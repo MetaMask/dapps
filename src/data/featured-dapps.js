@@ -7,13 +7,6 @@ export default [
 		icon: './images/dapps/uniswap.exchange.png'
 	},
 	{
-		url: 'https://peepeth.com/_',
-		name: 'Peepeth',
-		shortName: 'Peepeth',
-		description: 'A blockchain-powered social network for our best selves.',
-		icon: './images/dapps/peepeth.com.png'
-	},
-	{
 		url: 'https://opensea.io/',
 		name: 'OpenSea',
 		shortName: 'OpenSea',
