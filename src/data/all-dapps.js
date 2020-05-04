@@ -50,7 +50,7 @@ const categories =  [
                 name: 'Cent',
                 url: 'https://beta.cent.co/',
                 description: 'Earn ETH by creating content',
-                icon: './images/dapps/beta.cent.co.png'
+                icon: './images/dapps/cent.co.png'
             },
             {
                 name: 'Gitcoin',
@@ -174,7 +174,7 @@ const categories =  [
                 name: 'Cent',
                 url: 'https://beta.cent.co/',
                 description: 'Earn ETH by creating content',
-                icon: './images/dapps/beta.cent.co.png'
+                icon: './images/dapps/cent.co.png'
             },
             {
                 name: 'OpenSea',
