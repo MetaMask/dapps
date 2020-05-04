@@ -50,7 +50,7 @@ const categories =  [
                 name: 'Cent',
                 url: 'https://beta.cent.co/',
                 description: 'Earn ETH by creating content',
-                icon: './images/dapps/beta.cent.co.png'
+                icon: './images/dapps/cent.co.png'
             },
             {
                 name: 'Gitcoin',
@@ -147,12 +147,6 @@ const categories =  [
                 icon: './images/dapps/3box.io.png'
             },
             {
-                name: 'Peepeth',
-                url: 'https://peepeth.com/welcome',
-                description: 'A blockchain-powered social network',
-                icon: './images/dapps/peepeth.com.png'
-            },
-            {
                 name: 'Kauri',
                 url: 'https://kauri.io/',
                 description: 'Ethereum dev content in a decentralized knowledge base',
@@ -180,7 +174,7 @@ const categories =  [
                 name: 'Cent',
                 url: 'https://beta.cent.co/',
                 description: 'Earn ETH by creating content',
-                icon: './images/dapps/beta.cent.co.png'
+                icon: './images/dapps/cent.co.png'
             },
             {
                 name: 'OpenSea',
@@ -221,8 +215,8 @@ const categories =  [
             },
             {
                 name: 'MakerDAO CDP',
-                url: 'https://cdp.makerdao.com/',
-                description: 'Generate DAI by locking up your ETH',
+                url: 'https://oasis.app/',
+                description: 'Trade, borrow, and save using Dai',
                 icon: './images/dapps/cdp.makerdao.com.png'
             },
             {

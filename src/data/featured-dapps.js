@@ -7,13 +7,6 @@ export default [
 		icon: './images/dapps/uniswap.exchange.png'
 	},
 	{
-		url: 'https://peepeth.com/_',
-		name: 'Peepeth',
-		shortName: 'Peepeth',
-		description: 'A blockchain-powered social network for our best selves.',
-		icon: './images/dapps/peepeth.com.png'
-	},
-	{
 		url: 'https://opensea.io/',
 		name: 'OpenSea',
 		shortName: 'OpenSea',
@@ -28,7 +21,7 @@ export default [
 		icon: './images/dapps/compound.finance.png'
 	},
 	{
-		url: 'https://cdp.makerdao.com',
+		url: 'https://oasis.app/',
 		name: 'MakerDAO CDP',
 		shortName: 'MakerDAO',
 		description: 'This is the place to generate DAI! Manage depositing of collateral and generation of DAI.',
