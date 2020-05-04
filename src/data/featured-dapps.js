@@ -21,7 +21,7 @@ export default [
 		icon: './images/dapps/compound.finance.png'
 	},
 	{
-		url: 'https://cdp.makerdao.com',
+		url: 'https://oasis.app/',
 		name: 'MakerDAO CDP',
 		shortName: 'MakerDAO',
 		description: 'This is the place to generate DAI! Manage depositing of collateral and generation of DAI.',

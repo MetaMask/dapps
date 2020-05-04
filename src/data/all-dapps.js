@@ -215,8 +215,8 @@ const categories =  [
             },
             {
                 name: 'MakerDAO CDP',
-                url: 'https://cdp.makerdao.com/',
-                description: 'Generate DAI by locking up your ETH',
+                url: 'https://oasis.app/',
+                description: 'Trade, borrow, and save using Dai',
                 icon: './images/dapps/cdp.makerdao.com.png'
             },
             {
