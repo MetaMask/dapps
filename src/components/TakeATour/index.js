@@ -33,6 +33,8 @@ export default class TakeATour extends Component {
                         <h3>Take a tour</h3>
                         <p>Our new mobile app gives you the control to access the new decentralized web</p>
                         <p>{`${window.__mmMixpanelToken}`}</p>
+                        <p>{`${window.__mmDistinctId}`}</p>
+                        
                     </div>
                 </a>
                 <button 

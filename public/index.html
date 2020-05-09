@@ -29,6 +29,8 @@
       MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
       mixpanel.init(window.__mmMixpanelToken, {opt_out_tracking_by_default: true});
       window.onload = function() { 
+        mixpanel.identify(window.__mmDistinctId)
+        
         window.__mmMetametrics && mixpanel.has_opted_out_tracking() && mixpanel.opt_in_tracking(); 
       }
     </script>
