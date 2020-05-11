@@ -1,9 +1,11 @@
 /* eslint-disable no-undef */
 export function trackEvent(action, data){
     if(mixpanel && window.__mmMetametrics){
+        const category = action.category
+        delete action.category
         mixpanel.track(
-            {category: 'Browser Home', action},
-            data
+            category,
+            {...action, ...data},
         );
     }
 }
