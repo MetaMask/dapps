@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import './FeaturedDapp.css';
-import trackEvent from '../../util/analytics';
+import{trackEvent, ANALYTICS_EVENT_OPTS} from '../../util/analytics';
 
 export default class FeaturedDapp extends Component {
 
     track = (e) => {
-        trackEvent('Click', { 
-            'featured-dapp' : this.props.data.shortName,
-            'url' : this.props.data.url,
-            'position': this.props.position + 1
+        trackEvent(ANALYTICS_EVENT_OPTS.CLICKS_FEATURED_DAPP, { 
+            'Dapp' : this.props.data.shortName,
+            'Url' : this.props.data.url,
+            'Position': this.props.position + 1
         });
         window.location.href = this.props.data.url;
     }

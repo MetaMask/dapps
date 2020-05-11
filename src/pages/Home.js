@@ -6,12 +6,12 @@ import FeaturedDappsCarousel from '../components/FeaturedDappsCarousel/';
 import ExploreDapps from '../components/ExploreDapps/';
 import Favorites from '../components/Favorites/';
 import TakeATour from '../components/TakeATour/';
-import trackEvent from '../util/analytics';
+import{trackEvent, ANALYTICS_EVENT_OPTS} from '../util/analytics';
 
 export default class Home extends Component {
 
     componentDidMount(){
-        trackEvent('Impression', {'page': 'home'});
+        trackEvent(ANALYTICS_EVENT_OPTS.IMPRESSION);
     }
 
     render(){
