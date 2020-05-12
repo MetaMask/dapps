@@ -30,7 +30,7 @@
       window.__mmMixpanelToken && mixpanel.init(window.__mmMixpanelToken, {opt_out_tracking_by_default: true});
       window.onload = function() { 
         window.__mmMetametrics && mixpanel.has_opted_out_tracking() && mixpanel.opt_in_tracking(); 
-        window.__mmMetametrics && mixpanel.identify(window.__mmDistinctId)
+        window.__mmMetametrics && window.__mmDistinctId && mixpanel.identify(window.__mmDistinctId)
       }
     </script>
     <!-- end Mixpanel -->
