@@ -182,12 +182,6 @@ const categories =  [
                 description: 'Buy, sell, and discover rare digital items',
                 icon: './images/dapps/opensea.io.png'
             },
-            {
-                name: 'Ujo Music',
-                url: 'https://www.ujomusic.com/',
-                description: 'Connecting artists and fans directly via Ethereum',
-                icon: './images/dapps/ujomusic.com.png'
-            },
         ],
     },
     {
