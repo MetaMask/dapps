@@ -165,12 +165,6 @@ const categories =  [
                 icon: './images/dapps/aragon.org.png'
             },
             {
-                name: 'Gitcoin Kudos',
-                url: 'https://gitcoin.co/kudos/',
-                description: 'A new way to show appreciation and build relationships',
-                icon: './images/dapps/gitcoin.co.png'
-            },
-            {
                 name: 'Cent',
                 url: 'https://beta.cent.co/',
                 description: 'Earn ETH by creating content',
