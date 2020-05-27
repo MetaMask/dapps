@@ -115,12 +115,6 @@ const categories =  [
                 description: 'This game centres around the collection and trading of unique Cars, Drivers & Components',
                 icon: './images/dapps/f1deltatime.com.png'
             },
-            {
-                name: 'World War Goo',
-                url: 'https://ethergoo.io/',
-                description: 'A competitive crypto idle game',
-                icon: './images/dapps/ethergoo.io.png'
-            }
         ],
     },
     {
