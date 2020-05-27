@@ -10,12 +10,6 @@ const categories =  [
         color: '#1098FC',
         dapps: [
             {
-                name: 'Wyre',
-                url: 'https://dash.sendwyre.com/',
-                description: 'Get ETH using your bank account or payment card',
-                icon: './images/dapps/sendwyre.com.png'
-            },
-            {
                 name: 'Local Ethereum',
                 url: 'https://localethereum.com/',
                 description: 'Get ETH peer-to-peer in over 130 countries',
