@@ -22,12 +22,6 @@ const categories =  [
                 icon: './images/dapps/sendwyre.com.png'
             },
             {
-                name: 'Changelly',
-                url: 'https://changelly.com/',
-                description: 'Purchase assets with credit card or exchange over 140 cryptos',
-                icon: './images/dapps/changelly.com.png'
-            },
-            {
                 name: 'Local Ethereum',
                 url: 'https://localethereum.com/',
                 description: 'Get ETH peer-to-peer in over 130 countries',
