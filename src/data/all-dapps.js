@@ -116,12 +116,6 @@ const categories =  [
                 icon: './images/dapps/f1deltatime.com.png'
             },
             {
-                name: 'Dice 2 Win',
-                url: 'https://dice2.win/',
-                description: 'Classic games run on open source contracts that pay ETH',
-                icon: './images/dapps/dice2.win.png'
-            },
-            {
                 name: 'World War Goo',
                 url: 'https://ethergoo.io/',
                 description: 'A competitive crypto idle game',
