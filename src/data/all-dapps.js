@@ -10,12 +10,6 @@ const categories =  [
         color: '#1098FC',
         dapps: [
             {
-                name: 'Coinbase',
-                url: 'https://www.coinbase.com/buy-ethereum',
-                description: 'Coinbase makes it simple to buy, sell, and hold ETH',
-                icon: './images/dapps/coinbase.com.png'
-            },
-            {
                 name: 'Wyre',
                 url: 'https://dash.sendwyre.com/',
                 description: 'Get ETH using your bank account or payment card',
