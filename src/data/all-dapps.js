@@ -208,12 +208,6 @@ const categories =  [
                 icon: './images/dapps/cdp.makerdao.com.png'
             },
             {
-                name: 'Dharma',
-                url: 'https://www.dharma.io/',
-                description: 'Lend or borrow ETH quickly & easily',
-                icon: './images/dapps/dharma.io.png'
-            },
-            {
                 name: 'Kyber Swap',
                 url: 'https://kyberswap.com/',
                 description: 'A simple way to exchange tokens',
