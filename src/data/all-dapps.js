@@ -245,12 +245,6 @@ const categories =  [
                 icon: './images/dapps/popula.com.png'
             },
             {
-                name: 'Breaker Mag',
-                url: 'https://breakermag.com/',
-                description: 'Telling stories in the blockchain space',
-                icon: './images/dapps/breakermag.com.png'
-            },
-            {
                 name: 'CoinDesk',
                 url: 'https://www.coindesk.com/',
                 description: 'Blockchain news',
