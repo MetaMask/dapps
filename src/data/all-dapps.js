@@ -27,12 +27,6 @@ const categories =  [
                 description: 'Get ETH peer-to-peer in over 130 countries',
                 icon: './images/dapps/localethereum.com.png'
             },
-            {
-                name: 'Simplex',
-                url: 'https://simplex.com/',
-                description: 'Buy ETH using your credit card',
-                icon: './images/dapps/simplex.com.png'
-            },
         ],
     },
     {
