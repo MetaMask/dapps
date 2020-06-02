@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import trackEvent from '../../util/analytics';
+import{trackEvent, ANALYTICS_EVENT_OPTS} from '../../util/analytics';
 
 import './DappCategory.css';
 
 export default class DappCategory extends Component {
     track = () => {
-        trackEvent('Click', { 
-            'dapp-category' : this.props.data.name,
+        trackEvent(ANALYTICS_EVENT_OPTS.CLICKS_DAPP_CATEGORY, { 
+            'Category' : this.props.data.name,
         });
     }
 
