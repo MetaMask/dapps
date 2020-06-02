@@ -1,7 +1,11 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCreditCard, faHandHoldingHeart,faDice, faCommentAlt, faMoneyBillWave, faNewspaper  } from '@fortawesome/free-solid-svg-icons'
-library.add(faCreditCard, faHandHoldingHeart, faDice, faCommentAlt, faMoneyBillWave, faNewspaper)
+import { faCreditCard, faHandHoldingHeart,faDice, faCommentAlt, faMoneyBillWave, faNewspaper, faWrench, faExchangeAlt  } from '@fortawesome/free-solid-svg-icons'
+library.add(faCreditCard, faHandHoldingHeart, faDice, faCommentAlt, faMoneyBillWave, faNewspaper, faWrench, faExchangeAlt)
 
+// name: '',
+// url: '',
+// description: '',
+// icon: './images/dapps/'
 
 const categories =  [
 	{
@@ -18,9 +22,9 @@ const categories =  [
         ],
     },
     {
-        name: 'Earn Crypto',
+        name: 'Get Crypto',
         icon: 'hand-holding-heart',
-        color: '#E06470',
+        color: '#FF45D8',
         dapps: [
             {
                 name: 'Cent',
@@ -43,7 +47,95 @@ const categories =  [
         ],
     },
     {
-        name: 'Games',
+        name: 'Tools',
+        icon: 'wrench',
+        color: '#F8883B',
+        dapps: [
+            {
+                name: 'Mintable',
+                url: 'https://mintable.app',
+                description: 'Mintable is a way for anyone to deploy a NFT smart contract and create their own NFTs',
+                icon: './images/dapps/mintable.png'
+            },
+            {
+                name: 'Ethereum Name Service',
+                url: 'https://app.ens.domains/',
+                description: 'Have one name for all your cryptocurrency wallets, a decentralised website, & more.',
+                icon: './images/dapps/ens.jpg'
+            },
+            {
+                name: 'Gnosis Safe Multisig"',
+                url: 'https://gnosis-safe.io/app/#/',
+                description: 'The most trusted platform to store digital assets on Ethereum collectively',
+                icon: './images/dapps/gnosis_safe.png'
+            },
+            {
+                name: 'Microsponsors',
+                url: 'https://microsponsors.io',
+                description: 'Microsponsors is an auction house for tokenized Time.',
+                icon: './images/dapps/microsponsors.png'
+
+            },
+        ]   
+    },
+    {
+        name: 'Exchanges',
+        icon: 'exchange-alt',
+        color: '#F8883B',
+        dapps: [
+            {
+                name: '1inch',
+                url: 'https://1inch.exchange',
+                description: '1inch is a DEX aggregator with the best DEX prices and single point of entry for DeFi.',
+                icon: './images/dapps/1inch.svg'
+            },
+            {
+                name: 'Totle Swap',
+                url: 'https://totle.exchange',
+                description: 'Swap any ERC-20 token at the best price',
+                icon: './images/dapps/totle.jpeg'
+            },
+            {
+                name: 'ParaSwap',
+                url: 'https://paraswap.io',
+                description: 'ParaSwap offers a simple, fast and safe way to exchange Ethereum-native tokens',
+                icon: './images/dapps/paraswap.png'
+            },
+            {
+                name: 'DeFiZap',
+                url: 'https://defizap.com/',
+                description: 'Deploy capital to unique opportunities in open finance in one transaction.',
+                icon: './images/dapps/defizap.png'
+            },
+            {
+                name: 'Tokenlon',
+                url: 'https://tokenlon.im/',
+                description: 'Tokenlon DEX, powered by 0x protocol.',
+                icon: './images/dapps/tokenion.png'
+            },
+        ]   
+    },
+    {
+        name: 'Marketplaces',
+        icon: 'dice',
+        color: '#F8883B',
+        dapps: [
+            {
+                name: 'miime',
+                url: 'https://miime.io/',
+                description: 'miime is an NFT marketplace catering to blockchain gamers in Japan and across the world.',
+                icon: './images/dapps/miime.png'
+            },
+            {
+                name: 'OpenSea',
+                url: 'https://opensea.io/',
+                description: 'Buy, sell, and discover rare digital items',
+                icon: './images/dapps/opensea.io.png'
+            },
+        ]   
+    },
+    {
+        name: 'Play Games',
         icon: 'dice',
         color: '#F8883B',
         dapps: [
@@ -65,19 +157,23 @@ const categories =  [
                 description: 'Collect, breed and trade unique CryptoKitties',
                 icon: './images/dapps/cryptokitties.co.png'
             },
-        //   Currently having problems with thumbnail
-        //
-        //    {
-        //         name: 'Snail Farm',
-        //         url: 'https://snailking.github.io/snailfarm3/',
-        //         description: 'An Ethereum forest adventure',
-        //         icon: './images/dapps/snailking.github.io.png'
-        //     },
             {
                 name: 'CryptoDozer',
                 url: 'https://cryptodozer.io/',
                 description: 'A blockchain-powered arcade game',
                 icon: './images/dapps/cryptodozer.io.png'
+            },
+            {
+                name: 'Clovers Network',
+                url: 'https://clovers.network',
+                description: 'Discover, collect & trade cryptographic icons',
+                icon: './images/dapps/clovers.png'
+            },
+            {
+                name: 'BRAVE FRONTIER HEROES',
+                url: 'https://bravefrontierheroes.com',
+                description: 'Brave Frontier Heroes is a wildly popular Blockchain game, let alone huge in Japan.',
+                icon: './images/dapps/brave_frontier_heroes.png'
             },
            {
                 name: 'Blockchain Cuties',
@@ -96,6 +192,18 @@ const categories =  [
                 url: 'https://www.f1deltatime.com/',
                 description: 'This game centres around the collection and trading of unique Cars, Drivers & Components',
                 icon: './images/dapps/f1deltatime.com.png'
+            },
+            {
+                name: 'MegaCryptoPolis 3D',
+                url: 'http://mcp3d.com',
+                description: 'Decentralized city builder strategy game',
+                icon: './images/dapps/megacryptopolis.png'
+            },
+            {
+                name: 'My Crypto Heroes',
+                url: 'https://www.mycryptoheroes.net/home',
+                description: 'MCH is a strategic turn based battle game, featuring PvE and PvP modes to fight for NFTs.',
+                icon: './images/dapps/my_crypto_heroes.jpg'
             },
         ],
     },
@@ -133,12 +241,6 @@ const categories =  [
                 url: 'https://beta.cent.co/',
                 description: 'Earn ETH by creating content',
                 icon: './images/dapps/cent.co.png'
-            },
-            {
-                name: 'OpenSea',
-                url: 'https://opensea.io/',
-                description: 'Buy, sell, and discover rare digital items',
-                icon: './images/dapps/opensea.io.png'
             },
         ],
     },
@@ -182,6 +284,18 @@ const categories =  [
                 url: 'https://www.coingecko.com/en',
                 description: '360° Market Overview of Coins & Cryptocurrencies',
                 icon: './images/dapps/coingecko.com.png'
+            },
+            {
+                name: 'Shell Protocol',
+                url: 'https://mainnet.shells.exchange',
+                description: 'Shell is a stablecoin interoperability protocol',
+                icon: './images/dapps/shell_protocol.png'
+            },
+            {
+                name: 'DeFi Saver',
+                url: 'https://defisaver.com/',
+                description: 'One-stop management solution for DeFi protocols.',
+                icon: './images/dapps/defi_saver.png'
             },
         ],
     },
