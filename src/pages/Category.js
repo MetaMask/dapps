@@ -5,25 +5,33 @@ import allDapps from '../data/all-dapps';
 
 export default class Category extends Component {
     
-    state = {
-        category: null
-    };
+    // state = {
+    //     category: null
+    // };
     
-    componentDidMount(){
-        const category = allDapps.find((cat) => (
-            cat.name.toLowerCase().replace(" ", "-") === this.props.match.params.category
-        ));
+    // componentDidMount(){
+    //     console.log('?')
+    //     const category = allDapps.find((cat) => (
+    //         cat.name.toLowerCase().replace(" ", "-") === this.props.match.params.category
+    //     ));
         
-        if(category){
-            this.setState({category});
-        }
+    //     if(category){
+    //         this.setState({category});
+    //     }
         
-    }
+    // }
 
 
     render(){
-        const { category } = this.state || {};
-        if(!category) return null;
+        // const { category } = this.state || {};
+        // if(!category){
+        //     console.log('hit it')
+        //     return null;
+        // } 
+        const category = allDapps.find((cat) => (
+            cat.name.toLowerCase().replace(" ", "-") === this.props.match.params.category
+        ));
+        console.log('category', category)
         return (
             <div>
                 <Navbar title={category.name} />
