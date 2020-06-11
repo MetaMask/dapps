@@ -26,9 +26,6 @@ export default class Category extends Component {
         if(!category){
             return null;
         } 
-        const category = allDapps.find((cat) => (
-            cat.name.toLowerCase().replace(" ", "-") === this.props.match.params.category
-        ));
         return (
             <div>
                 <Navbar title={category.name} />
