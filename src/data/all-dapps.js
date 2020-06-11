@@ -2,23 +2,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCreditCard,faDice, faCommentAlt, faMoneyBillWave, faNewspaper, faWrench, faExchangeAlt, faStore  } from '@fortawesome/free-solid-svg-icons'
 library.add(faCreditCard, faDice, faCommentAlt, faMoneyBillWave, faNewspaper, faWrench, faExchangeAlt, faStore)
 
-// name: '',
-// url: '',
-// description: '',
-// icon: './images/dapps/'
-
 const categories =  [
     {
         name: 'DeFi',
         icon: 'money-bill-wave',
         color: '#5cd879',
         dapps: [
-            {
-                name: 'AirSwap',
-                url: 'https://instant.airswap.io/',
-                description: 'Find Tokens, Get Best Prices, & Make Instant Trades.',
-                icon: './images/dapps/instant.airswap.io.png'
-            },
             {
                 name: 'Compound',
                 url: 'https://app.compound.finance/',
@@ -32,16 +21,16 @@ const categories =  [
                 icon: './images/dapps/cdp.makerdao.com.png'
             },
             {
-                name: 'Kyber Swap',
-                url: 'https://kyberswap.com/',
-                description: 'A simple way to exchange tokens.',
-                icon: './images/dapps/kyber.network.png'
+                name: 'AirSwap',
+                url: 'https://instant.airswap.io/',
+                description: 'Find Tokens, Get Best Prices, & Make Instant Trades.',
+                icon: './images/dapps/instant.airswap.io.png'
             },
             {
-                name: 'CoinGecko',
-                url: 'https://www.coingecko.com/en',
-                description: '360° Market Overview of Coins & Cryptocurrencies.',
-                icon: './images/dapps/coingecko.com.png'
+                name: 'PoolTogether',
+                url: 'https://app.pooltogether.us/',
+                description: 'A prize-linked savings account. By saving money you have a chance to win prizes.',
+                icon: './images/dapps/pooltogether.us.png'
             },
             {
                 name: 'Shell Protocol',
@@ -61,6 +50,12 @@ const categories =  [
                 description: 'Make your crypto compatible with any blockchain!',
                 icon: './images/dapps/pTokens.png'
             },
+            {
+                name: 'CoinGecko',
+                url: 'https://www.coingecko.com/en',
+                description: '360° Market Overview of Coins & Cryptocurrencies.',
+                icon: './images/dapps/coingecko.com.png'
+            },
         ],
     },
     {
@@ -75,6 +70,18 @@ const categories =  [
                 icon: './images/dapps/uniswap.exchange.png'
             },
             {
+                name: 'Kyber Swap',
+                url: 'https://kyberswap.com/',
+                description: 'A simple way to exchange tokens.',
+                icon: './images/dapps/kyber.network.png'
+            },
+            {
+                name: 'Tokenlon',
+                url: 'https://tokenlon.im/',
+                description: 'Tokenlon DEX, powered by 0x protocol.',
+                icon: './images/dapps/tokenlon.png'
+            },
+            {
                 name: '1inch',
                 url: 'https://1inch.exchange',
                 description: '1inch is a DEX aggregator with the best DEX prices and single point of entry for DeFi.',
@@ -87,22 +94,10 @@ const categories =  [
                 icon: './images/dapps/totle.jpeg'
             },
             {
-                name: 'ParaSwap',
-                url: 'https://paraswap.io',
-                description: 'ParaSwap offers a simple, fast and safe way to exchange Ethereum-native tokens.',
-                icon: './images/dapps/paraswap.png'
-            },
-            {
                 name: 'DeFiZap',
-                url: 'https://defizap.com/',
+                url: 'https://zapper.fi',
                 description: 'Deploy capital to unique opportunities in open finance in one transaction.',
                 icon: './images/dapps/defizap.png'
-            },
-            {
-                name: 'Tokenlon',
-                url: 'https://tokenlon.im/',
-                description: 'Tokenlon DEX, powered by 0x protocol.',
-                icon: './images/dapps/tokenlon.png'
             },
             {
                 name: 'Radar Relay',
@@ -141,6 +136,12 @@ const categories =  [
                 description: 'Leading non-fungible token creation tool and marketplace.',
                 icon: './images/dapps/mintbase.png'  
             },
+            {
+                name: 'Axie Infinity',
+                url: 'https://axieinfinity.com/#',
+                description: 'Collect and raise fantasy creatures called Axie.',
+                icon: './images/dapps/axieinfinity.com.png'
+            },
         ]   
     },
     {
@@ -149,16 +150,10 @@ const categories =  [
         color: '#FC99EA',
         dapps: [
             {
-                name: 'Axie Infinity',
-                url: 'https://axieinfinity.com/#',
-                description: 'Collect and raise fantasy creatures called Axie.',
-                icon: './images/dapps/axieinfinity.com.png'
-            },
-            {
-                name: '0x Universe',
-                url: 'https://0xuniverse.com/',
-                description: 'Build spaceships, explore the galaxy, conquer planets.',
-                icon: './images/dapps/0xuniverse.com.png'
+                name: 'My Crypto Heroes',
+                url: 'https://www.mycryptoheroes.net/home',
+                description: 'MCH is a strategic turn based battle game, featuring PvE and PvP modes to fight for NFTs.',
+                icon: './images/dapps/my_crypto_heroes.jpg'
             },
             {
                 name: 'CryptoKitties',
@@ -168,7 +163,7 @@ const categories =  [
             },
             {
                 name: 'CryptoDozer',
-                url: 'https://cryptodozer.io/',
+                url: 'https://market.playdapp.io',
                 description: 'A blockchain-powered arcade game.',
                 icon: './images/dapps/cryptodozer.io.png'
             },
@@ -191,12 +186,6 @@ const categories =  [
                 icon: './images/dapps/blockchaincuties.com.png'
             },
             {
-                name: 'MLB Champions',
-                url: 'https://mlbcryptobaseball.com/welcome',
-                description: 'MLB Champions is a game about collecting digital MLB figures and playing to earn rewards.',
-                icon: './images/dapps/mlbcryptobaseball.com.png'
-            },
-            {
                 name: 'F1® Delta Time',
                 url: 'https://www.f1deltatime.com/',
                 description: 'This game centres around the collection and trading of unique Cars, Drivers & Components.',
@@ -207,12 +196,6 @@ const categories =  [
                 url: 'http://mcp3d.com',
                 description: 'Decentralized city builder strategy game.',
                 icon: './images/dapps/megacryptopolis.png'
-            },
-            {
-                name: 'My Crypto Heroes',
-                url: 'https://www.mycryptoheroes.net/home',
-                description: 'MCH is a strategic turn based battle game, featuring PvE and PvP modes to fight for NFTs.',
-                icon: './images/dapps/my_crypto_heroes.jpg'
             },
             {
                 name: 'Sorare',
@@ -228,28 +211,22 @@ const categories =  [
         color: '#1098FC',
         dapps: [
             {
-                name: 'Cent',
-                url: 'https://beta.cent.co/',
-                description: 'Earn ETH by creating content.',
-                icon: './images/dapps/cent.co.png'
-            },
-            {
                 name: 'Gitcoin',
                 url: 'https://gitcoin.co/',
                 description: 'Get paid in crypto for working on open source projects.',
                 icon: './images/dapps/gitcoin.co.png'
             },
             {
-                name: 'PoolTogether',
-                url: 'https://app.pooltogether.us/',
-                description: 'A prize-linked savings account. By saving money you have a chance to win prizes.',
-                icon: './images/dapps/pooltogether.us.png'
-            },
-            {
                 name: 'Local Ethereum',
                 url: 'https://localethereum.com/',
                 description: 'Get ETH peer-to-peer in over 130 countries.',
                 icon: './images/dapps/localethereum.com.png'
+            },
+            {
+                name: 'Cent',
+                url: 'https://beta.cent.co/',
+                description: 'Earn ETH by creating content.',
+                icon: './images/dapps/cent.co.png'
             },
         ],
     },
@@ -321,7 +298,6 @@ const categories =  [
             },
         ],
     },
-    
     {
         name: 'News',
         icon: 'newspaper',
