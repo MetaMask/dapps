@@ -1,6 +1,6 @@
 {
-  "name": "dapps",
-  "version": "0.1.0",
+  "name": "@metamask/dapps",
+  "version": "0.0.0",
   "private": true,
   "resolutions": {
     "**/optimist/minimist": "^1.2.5",
