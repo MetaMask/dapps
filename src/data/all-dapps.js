@@ -250,7 +250,7 @@ const categories =  [
             {
                 name: 'Gnosis Safe Multisig',
                 url: 'https://gnosis-safe.io/app/#/',
-                description: 'The most trusted platform to store digital assets on Ethereum collectively.',
+                description: 'Manage digital assets collectively.',
                 icon: './images/dapps/gnosis_safe.png'
             },
             {
