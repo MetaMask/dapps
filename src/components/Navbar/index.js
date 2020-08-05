@@ -7,7 +7,7 @@ import './index.css';
 
 
 export default class Navbar extends Component {
-    render(){
+    render() {
         const { title } = this.props;
         return (
             <div className={'navbar'}>
@@ -15,7 +15,7 @@ export default class Navbar extends Component {
                     to={'/'}
                     className={'navbar-back'}
                 >
-                    <img src={backIcon}  alt={'go back'} />
+                    <img src={backIcon} alt={'go back'} />
                 </Link>
                 <h1>{title}</h1>
             </div>

@@ -4,6 +4,7 @@ import { AnimatedRoute } from 'react-router-transition';
 import Home from './pages/Home';
 import Category from './pages/Category';
 import ScrollToTop from './components/ScrollToTop/';
+import LanguageMenu from './components/LanguageMenu';
 import './App.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <Router>
       <ScrollToTop>
         <div className="App">
+          <LanguageMenu />
           <Route exact path="/" component={Home} />
           <div className={'animated-wrapper-rule'}>
             <AnimatedRoute

@@ -1,0 +1,11 @@
+.language__menu-position {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  z-index: 999999999;
+}
+
+.language__menu-box {
+  background-color: #f5f7f8;
+}
