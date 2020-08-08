@@ -1,11 +1,11 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCreditCard, faHandHoldingHeart,faDice, faCommentAlt, faMoneyBillWave, faNewspaper  } from '@fortawesome/free-solid-svg-icons'
+import { faCreditCard, faHandHoldingHeart, faDice, faCommentAlt, faMoneyBillWave, faNewspaper } from '@fortawesome/free-solid-svg-icons'
 library.add(faCreditCard, faHandHoldingHeart, faDice, faCommentAlt, faMoneyBillWave, faNewspaper)
 
 
-const categories =  [
-	{
-        name: 'Buy Crypto',
+const categories = [
+    {
+        name: '{{ buyCrypto }}',
         icon: 'credit-card',
         color: '#1098FC',
         dapps: [
@@ -18,7 +18,7 @@ const categories =  [
         ],
     },
     {
-        name: 'Earn Crypto',
+        name: '{{ earnCrypto }}',
         icon: 'hand-holding-heart',
         color: '#E06470',
         dapps: [
@@ -43,7 +43,7 @@ const categories =  [
         ],
     },
     {
-        name: 'Games',
+        name: '{{ games }}',
         icon: 'dice',
         color: '#F8883B',
         dapps: [
@@ -65,21 +65,21 @@ const categories =  [
                 description: 'Collect, breed and trade unique CryptoKitties',
                 icon: './images/dapps/cryptokitties.co.png'
             },
-        //   Currently having problems with thumbnail
-        //
-        //    {
-        //         name: 'Snail Farm',
-        //         url: 'https://snailking.github.io/snailfarm3/',
-        //         description: 'An Ethereum forest adventure',
-        //         icon: './images/dapps/snailking.github.io.png'
-        //     },
+            //   Currently having problems with thumbnail
+            //
+            //    {
+            //         name: 'Snail Farm',
+            //         url: 'https://snailking.github.io/snailfarm3/',
+            //         description: 'An Ethereum forest adventure',
+            //         icon: './images/dapps/snailking.github.io.png'
+            //     },
             {
                 name: 'CryptoDozer',
                 url: 'https://cryptodozer.io/',
                 description: 'A blockchain-powered arcade game',
                 icon: './images/dapps/cryptodozer.io.png'
             },
-           {
+            {
                 name: 'Blockchain Cuties',
                 url: 'https://blockchaincuties.com/',
                 description: 'A multi-blockchain game with collectibles',
@@ -100,7 +100,7 @@ const categories =  [
         ],
     },
     {
-        name: 'Social',
+        name: '{{ social }}',
         icon: 'comment-alt',
         color: '#FFD33D',
         dapps: [
@@ -143,7 +143,7 @@ const categories =  [
         ],
     },
     {
-        name: 'Finance',
+        name: '{{ finance }}',
         icon: 'money-bill-wave',
         color: '#5cd879',
         dapps: [
@@ -186,7 +186,7 @@ const categories =  [
         ],
     },
     {
-        name: 'News',
+        name: '{{ news }}',
         icon: 'newspaper',
         color: '#838c96',
         dapps: [
