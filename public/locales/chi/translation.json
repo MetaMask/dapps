@@ -1,6 +1,11 @@
 {
   "HOMEPAGE": {
-    "TEST": " Chinese testingg"
-  },
-  "BUY_CRYPTO": "Buy Crypto"
+    "TEST": " Chinese testingg",
+    "BUY_CRYPTO": "Buy Crypto",
+    "EARN_CRYPTO": "Earn Crypto",
+    "GAMES": "Games",
+    "SOCIAL": "Social",
+    "FINANCE": "Finance",
+    "NEWS": "News"
+  }
 }

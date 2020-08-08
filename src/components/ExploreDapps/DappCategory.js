@@ -32,12 +32,12 @@ function DappCategory(props) {
             />
             <span className={'dapp-category-name'} >
                 {t(name, {
-                    buyCrypto: 'Buy Crypto',
-                    earnCrypto: 'Earn Crypto',
-                    games: 'Games',
-                    social: 'Social',
-                    finance: 'Finance',
-                    news: 'News',
+                    buyCrypto: '$t(HOMEPAGE.BUY_CRYPTO)',
+                    earnCrypto: '$t(HOMEPAGE.EARN_CRYPTO)',
+                    games: '$t(HOMEPAGE.GAMES)',
+                    social: '$t(HOMEPAGE.SOCIAL)',
+                    finance: '$t(HOMEPAGE.FINANCE)',
+                    news: '$t(HOMEPAGE.NEWS)',
                 })}
             </span>
         </Link>
