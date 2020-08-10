@@ -18,6 +18,7 @@ function App() {
             <AnimatedRoute
               path="/:category"
               component={Category}
+              runOnMount={true}
               atEnter={{ offset: 50, opacity: 0 }}
               atLeave={{ offset: 150, opacity: 1 }}
               atActive={{ offset: 0, opacity: 1 }}

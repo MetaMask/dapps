@@ -10,9 +10,9 @@ const categories = [
         color: '#1098FC',
         dapps: [
             {
-                name: 'Local Ethereum',
+                name: '{{ localEthereum }}',
                 url: 'https://localethereum.com/',
-                description: 'Get ETH peer-to-peer in over 130 countries',
+                description: '{{ localEthereumDescription }}',
                 icon: './images/dapps/localethereum.com.png'
             },
         ],
@@ -23,21 +23,21 @@ const categories = [
         color: '#E06470',
         dapps: [
             {
-                name: 'Cent',
+                name: '{{ cent }}',
                 url: 'https://beta.cent.co/',
-                description: 'Earn ETH by creating content',
+                description: '{{ centDescription }}',
                 icon: './images/dapps/cent.co.png'
             },
             {
-                name: 'Gitcoin',
+                name: '{{ gitcoin }}',
                 url: 'https://gitcoin.co/',
-                description: 'Get paid in crypto for working on open source projects',
+                description: '{{ gitcoinDescription }}',
                 icon: './images/dapps/gitcoin.co.png'
             },
             {
-                name: 'PoolTogether',
+                name: '{{ poolTogether }}',
                 url: 'https://app.pooltogether.us/',
-                description: 'A prize-linked savings account. By saving money you have a chance to win prizes.',
+                description: '{{ poolTogetherDescription }}',
                 icon: './images/dapps/pooltogether.us.png'
             },
         ],
@@ -48,21 +48,21 @@ const categories = [
         color: '#F8883B',
         dapps: [
             {
-                name: 'Axie Infinity',
+                name: '{{ axieInfinity }}',
                 url: 'https://axieinfinity.com/#',
-                description: 'Collect and raise fantasy creatures called Axie',
+                description: '{{ axieInfinityDescription }}',
                 icon: './images/dapps/axieinfinity.com.png'
             },
             {
-                name: '0x Universe',
+                name: '{{ zeroxUniverse }}',
                 url: 'https://0xuniverse.com/',
-                description: 'Build spaceships, explore the galaxy, conquer planets',
+                description: '{{ zeroxUniverseDescription }}',
                 icon: './images/dapps/0xuniverse.com.png'
             },
             {
-                name: 'CryptoKitties',
+                name: '{{ cryptoKitties }}',
                 url: 'https://www.cryptokitties.co/',
-                description: 'Collect, breed and trade unique CryptoKitties',
+                description: '{{ cryptoKittiesDescription }}',
                 icon: './images/dapps/cryptokitties.co.png'
             },
             //   Currently having problems with thumbnail
@@ -74,27 +74,27 @@ const categories = [
             //         icon: './images/dapps/snailking.github.io.png'
             //     },
             {
-                name: 'CryptoDozer',
+                name: '{{ cryptoDozer }}',
                 url: 'https://cryptodozer.io/',
-                description: 'A blockchain-powered arcade game',
+                description: '{{ cryptoDozerDescription }}',
                 icon: './images/dapps/cryptodozer.io.png'
             },
             {
-                name: 'Blockchain Cuties',
+                name: '{{ blockchainCuties }}',
                 url: 'https://blockchaincuties.com/',
-                description: 'A multi-blockchain game with collectibles',
+                description: '{{ blockchainCutiesDescription }}',
                 icon: './images/dapps/blockchaincuties.com.png'
             },
             {
-                name: 'MLB Champions',
+                name: '{{ mLBChampions }}',
                 url: 'https://mlbcryptobaseball.com/welcome',
-                description: 'Collect official MLB Digital Figures',
+                description: '{{ mLBChampionsDescription }}',
                 icon: './images/dapps/mlbcryptobaseball.com.png'
             },
             {
-                name: 'F1® Delta Time',
+                name: '{{ fOneDeltaTime }}',
                 url: 'https://www.f1deltatime.com/',
-                description: 'This game centres around the collection and trading of unique Cars, Drivers & Components',
+                description: '{{ fOneDeltaTimeDescription }}',
                 icon: './images/dapps/f1deltatime.com.png'
             },
         ],
@@ -105,39 +105,39 @@ const categories = [
         color: '#FFD33D',
         dapps: [
             {
-                name: '3Box',
+                name: '{{ threeBox }}',
                 url: 'https://3box.io/hub',
-                description: 'Social profiles for Ethereum',
+                description: '{{ threeBoxDescription }}',
                 icon: './images/dapps/3box.io.png'
             },
             {
-                name: 'Kauri',
+                name: '{{ kauri }}',
                 url: 'https://kauri.io/',
-                description: 'Ethereum dev content in a decentralized knowledge base',
+                description: '{{ kauriDescription }}',
                 icon: './images/dapps/kauri.io.png'
             },
             {
-                name: 'FOAM',
+                name: '{{ foam }}',
                 url: 'https://map.foam.space',
-                description: 'Create, curate, and search a consensus-driven map',
+                description: '{{ foamDescription }}',
                 icon: './images/dapps/foam.space.png'
             },
             {
-                name: 'Aragon',
+                name: '{{ aragon }}',
                 url: 'https://aragon.org/discover/',
-                description: 'Create and manage communities, companies, organizations',
+                description: '{{ aragonDescription }}',
                 icon: './images/dapps/aragon.org.png'
             },
             {
-                name: 'Cent',
+                name: '{{ cent }}',
                 url: 'https://beta.cent.co/',
-                description: 'Earn ETH by creating content',
+                description: '{{ centDescription }}',
                 icon: './images/dapps/cent.co.png'
             },
             {
-                name: 'OpenSea',
+                name: '{{ openSea }}',
                 url: 'https://opensea.io/',
-                description: 'Buy, sell, and discover rare digital items',
+                description: '{{ openSeaDescription }}',
                 icon: './images/dapps/opensea.io.png'
             },
         ],
@@ -148,39 +148,39 @@ const categories = [
         color: '#5cd879',
         dapps: [
             {
-                name: 'Uniswap',
+                name: '{{ uniswap }}',
                 url: 'https://uniswap.exchange/',
-                description: 'Swap and trade tokens',
+                description: '{{ uniswapDescription }}',
                 icon: './images/dapps/uniswap.exchange.png'
             },
             {
-                name: 'AirSwap',
+                name: '{{ airSwap }}',
                 url: 'https://instant.airswap.io/',
-                description: 'Find Tokens, Get Best Prices, & Make Instant Trades',
+                description: '{{ airSwapDescription }}',
                 icon: './images/dapps/instant.airswap.io.png'
             },
             {
-                name: 'Compound',
+                name: '{{ compound }}',
                 url: 'https://app.compound.finance/',
-                description: 'Earn interest on your ETH',
+                description: '{{ compoundDescription }}',
                 icon: './images/dapps/compound.finance.png'
             },
             {
-                name: 'MakerDAO CDP',
+                name: '{{ makerDAOCDP }}',
                 url: 'https://oasis.app/',
-                description: 'Trade, borrow, and save using Dai',
+                description: '{{ makerDAOCDPDescription }}',
                 icon: './images/dapps/cdp.makerdao.com.png'
             },
             {
-                name: 'Kyber Swap',
+                name: '{{ kyberSwap }}',
                 url: 'https://kyberswap.com/',
-                description: 'A simple way to exchange tokens',
+                description: '{{ kyberSwapDescription }}',
                 icon: './images/dapps/kyber.network.png'
             },
             {
-                name: 'CoinGecko',
+                name: '{{ coinGecko }}',
                 url: 'https://www.coingecko.com/en',
-                description: '360° Market Overview of Coins & Cryptocurrencies',
+                description: '{{ coinGeckoDescription }}',
                 icon: './images/dapps/coingecko.com.png'
             },
         ],
@@ -191,21 +191,21 @@ const categories = [
         color: '#838c96',
         dapps: [
             {
-                name: 'Civil',
+                name: '{{ civil }}',
                 url: 'https://civil.co/',
-                description: 'A community-owned platform for independent journalism',
+                description: '{{ civilDescription }}',
                 icon: './images/dapps/civil.co.png'
             },
             {
-                name: 'Popula',
+                name: '{{ popula }}',
                 url: 'https://popula.com/',
-                description: 'News powered by Civil and Ethereum',
+                description: '{{ populaDescription }}',
                 icon: './images/dapps/popula.com.png'
             },
             {
-                name: 'CoinDesk',
+                name: '{{ coinDesk }}',
                 url: 'https://www.coindesk.com/',
-                description: 'Blockchain news',
+                description: '{{ coinDeskDescription }}',
                 icon: './images/dapps/coindesk.com.png'
             },
         ],

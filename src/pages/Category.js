@@ -4,34 +4,34 @@ import Dapp from '../components/Dapp/';
 import allDapps from '../data/all-dapps';
 
 export default class Category extends Component {
-    
+
     state = {
         category: null
     };
-    
-    componentDidMount(){
+
+    componentDidMount() {
         const category = allDapps.find((cat) => (
             cat.name.toLowerCase().replace(" ", "-") === this.props.match.params.category
         ));
-        
-        if(category){
-            this.setState({category});
+
+        if (category) {
+            this.setState({ category });
         }
-        
+
     }
 
 
-    render(){
+    render() {
         const { category } = this.state || {};
-        if(!category) return null;
+        if (!category) return null;
         return (
             <div>
                 <Navbar title={category.name} />
                 <div className={'category-wrapper'}>
-                {   category.dapps.map( (dapp, i) => (
+                    {category.dapps.map((dapp, i) => (
                         <Dapp data={dapp} key={dapp.url} position={i} />
                     ))
-                }
+                    }
                 </div>
             </div>
         );

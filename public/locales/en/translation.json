@@ -1,6 +1,75 @@
 {
   "HOMEPAGE": {
-    "TEST": " English testingg"
+    "TEST": " Chinese testingg",
+    "BUY_CRYPTO": "Buy Crypto",
+    "EARN_CRYPTO": "Earn Crypto",
+    "GAMES": "Games",
+    "SOCIAL": "Social",
+    "FINANCE": "Finance",
+    "NEWS": "News"
   },
-  "DAPP_NAME_UNKOWN": "Dapp N/A"
+  "DAPPS": {
+    "BUY_CRPTO": {
+      "LOCAL_ETHEREUM":"Local Ethereum",
+      "LOCAL_ETHEREUM_DESCRIPTION": "Get ETH peer-to-peer in over 130 countries"
+    },
+    "EARN_CRYPTO": {
+      "CENT": "Cent",
+      "CENT_DESCRIPTION": "Earn ETH by creating content",
+      "GITCOIN": "Gitcoin",
+      "GITCOIN_DESCRIPTION": "Get paid in crypto for working on open source projects",
+      "POOLTOGETHER": "PoolTogether",
+      "POOLTOGETHER_DESCRIPTION": "A prize-linked savings account. By saving money you have a chance to win prizes."
+    },
+    "GAMES": {
+      "AXIEINFINITY": "Axie Infinity",
+      "AXIEINFINITY_DESCRIPTION": "Collect and raise fantasy creatures called Axie",
+      "ZEROXUNIVERSE": "0x Universe",
+      "ZEROXUNIVERSE_DESCRIPTION": "Build spaceships, explore the galaxy, conquer planets",
+      "CRYPTOKITTIES": "CryptoKitties",
+      "CRYPTOKITTIES_DESCRIPTION": "Collect, breed and trade unique CryptoKitties",
+      "CRYPTODOZER": "CryptoDozer",
+      "CRYPTODOZER_DESCRIPTION": "A blockchain-powered arcade game",
+      "BLOCKCHAIN_CUTIES": "Blockchain Cuties",
+      "BLOCKCHAIN_CUTIES_DESCRIPTION": "A multi-blockchain game with collectibles",
+      "MLB_CHAMPIONS": "MLB Champions",
+      "MLB_CHAMPIONS_DESCRIPTION": "Collect official MLB Digital Figures",
+      "FONE_DELTA_TIME": "F1® Delta Time",
+      "FONE_DELTA_TIME_DESCRIPTION": "This game centres around the collection and trading of unique Cars, Drivers & Components"
+    },
+    "SOCIAL": {
+      "THREEBOX": "3Box",
+      "THREEBOX_DESCRIPTION": "Social profiles for Ethereum",
+      "KAURI": "Kauri",
+      "KAURI_DESCRIPTION": "Ethereum dev content in a decentralized knowledge base",
+      "FOAM": "FOAM",
+      "FOAM_DESCRIPTION": "Create, curate, and search a consensus-driven map",
+      "ARAGON": "Aragon",
+      "ARAGON_DESCRIPTION": "Create and manage communities, companies, organizations",
+      "OPENSEA": "OpenSea",
+      "OPENSEA_DESCRIPTION": "Buy, sell, and discover rare digital items"
+    },
+    "FINANCE": {
+      "UNISWAP": "Uniswap",
+      "UNISWAP_DESCRIPTION": "Swap and trade tokens",
+      "AIRSWAP": "AirSwap",
+      "AIRSWAP_DESCRIPTION": "Find Tokens, Get Best Prices, & Make Instant Trades",
+      "COMPOUND": "Compound",
+      "COMPOUND_DESCRIPTION": "Earn interest on your ETH",
+      "MAKERDOACDP": "MakerDAO CDP",
+      "MAKERDOACDP_DESCRIPTION": "Trade, borrow, and save using Dai",
+      "KYBER_SWAP": " Kyber Swap",
+      "KYBER_SWAP_DESCRIPTION": "A simple way to exchange tokens",
+      "COINGECKO": "CoinGecko",
+      "COINGECKO_DESCRIPTION": "360° Market Overview of Coins & Cryptocurrencies"
+    },
+    "NEWS": {
+      "CIVIL": "Civil",
+      "CIVIL_DESCRIPTION": "A community-owned platform for independent journalism",
+      "POPULA": "Popula",
+      "POPULA_DESCRIPTION": "News powered by Civil and Ethereum",
+      "COINDESK": "CoinDesk",
+      "COINDESK_DESCRIPTION": "Blockchain news"
+    }
+  }
 }
