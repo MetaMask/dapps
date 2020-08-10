@@ -35,8 +35,11 @@ function LanguageMenu() {
       </div>
       <div>
         <button onClick={() => handleClick('en')}>English</button>
-        <button onClick={() => handleClick('ko')}>Korean</button>
-        <button onClick={() => handleClick('chi')}>Chinese</button>
+        <label htmlFor="languages">Choose a language:</label>
+        <select name="languages" onChange={e => handleClick(e.currentTarget.value)}>
+          <option value="en">English</option>
+          <option value="chi">Chinese</option>
+        </select>
         <p>{t('HOMEPAGE.TEST')}</p>
       </div>
     </div>
