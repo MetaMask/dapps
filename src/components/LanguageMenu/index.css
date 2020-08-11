@@ -6,6 +6,47 @@
   z-index: 999999999;
 }
 
-.language__menu-box {
-  background-color: #f5f7f8;
+.language__menu-select {
+  width: 75px;
+  height: 35px;
+  padding: 4px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px #999;
+  background: #ffffff;;
+  border: none;
+  outline: none;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.language__menu-label {
+  position: relative;
+}
+
+.language__menu-label::after {
+  content: '<>';
+  font: 11px "Consolas", monospace;
+  color: #000000;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 8px;
+  top: 2px;
+  padding: 0 0 2px;
+  position: absolute;
+  pointer-events: none;
+}
+
+.language__menu-label::before {
+  content: '';
+  right: 6px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  pointer-events: none;
+  display: block;
 }

@@ -4,7 +4,7 @@ import './index.css';
 
 function LanguageMenu() {
 
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   function handleClick(lang) {
     i18n.changeLanguage(lang);
@@ -12,7 +12,7 @@ function LanguageMenu() {
 
   return (
     <div className="language__menu-position language__menu-box">
-      <div>
+      {/* <div className="language__menu-logo">
         <svg height="35" viewBox="0 0 60 60" width="35" xmlns="http://www.w3.org/2000/svg">
           <path d="M56 0H26a4 4 0 00-4 4v4.34C1.68 11.45-7.23 36.15 6.81 51.52c0 
                   0 .08.06.11.1 11.28 11.62 28.31 10.65 38.17 0 0 0 .06 0 .08-.07A25.87 25.87 
@@ -32,15 +32,15 @@ function LanguageMenu() {
                   0 004-.91 8.5 8.5 0 004 .91 1 1 0 000-2 7 7 0 01-2.18-.32A10 10 0 0053 14h1a1 1 0 000-2z"
           />
         </svg>
-      </div>
-      <div>
-        <button onClick={() => handleClick('en')}>English</button>
-        <label htmlFor="languages">Choose a language:</label>
-        <select name="languages" onChange={e => handleClick(e.currentTarget.value)}>
-          <option value="en">English</option>
-          <option value="chi">Chinese</option>
-        </select>
-        <p>{t('HOMEPAGE.TEST')}</p>
+      </div> */}
+      <div className="language__menu-drawer">
+        {/* <button onClick={() => handleClick('en')}>English</button> */}
+        <label className="language__menu-label">
+          <select name="languages" className="language__menu-select" onChange={e => handleClick(e.currentTarget.value)}>
+            <option value="en">English</option>
+          </select>
+        </label>
+        {/* <p>{t('HOMEPAGE.TEST')}</p> */}
       </div>
     </div>
   )
