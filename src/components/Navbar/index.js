@@ -5,7 +5,6 @@ import backIcon from '../../images/back-icon.svg';
 
 import './index.css';
 
-
 export default class Navbar extends Component {
     render(){
         const { title } = this.props;

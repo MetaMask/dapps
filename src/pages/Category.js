@@ -23,7 +23,9 @@ export default class Category extends Component {
 
     render(){
         const { category } = this.state || {};
-        if(!category) return null;
+        if(!category){
+            return null;
+        } 
         return (
             <div>
                 <Navbar title={category.name} />
