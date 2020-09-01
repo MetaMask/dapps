@@ -1,4 +1,11 @@
 export default [
+  {
+    url: 'https://aave.com/',
+    name: 'Aave',
+    shortName: 'Aave',
+    description: 'Aave is a money market protocol, where you can earn interest on your deposits and borrow crypto assets.',
+    icon: './images/dapps/Aave.svg',
+  },
 	{
 		url: 'https://uniswap.exchange/',
 		name: 'Uniswap Exchange',

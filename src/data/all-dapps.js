@@ -9,6 +9,12 @@ const categories =  [
         color: '#5cd879',
         dapps: [
             {
+                name: 'Aave',
+                url: 'https://app.aave.com/',
+                description: 'Earn interest on your deposits and borrow crypto assets.',
+                icon: './images/dapps/Aave.svg'
+            },
+            {
                 name: 'Compound',
                 url: 'https://app.compound.finance/',
                 description: 'Earn interest on your ETH.',
