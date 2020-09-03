@@ -33,12 +33,6 @@ const categories =  [
                 icon: './images/dapps/pooltogether.us.png'
             },
             {
-                name: 'Shell Protocol',
-                url: 'https://mainnet.shells.exchange',
-                description: 'Shell is a stablecoin interoperability protocol.',
-                icon: './images/dapps/shell_protocol.png'
-            },
-            {
                 name: 'DeFi Saver',
                 url: 'https://defisaver.com/',
                 description: 'One-stop management solution for DeFi protocols.',
