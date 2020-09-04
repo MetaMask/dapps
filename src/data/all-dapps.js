@@ -290,6 +290,12 @@ const categories =  [
                 description: 'Create and manage communities, companies, organizations.',
                 icon: './images/dapps/aragon.org.png'
             },
+	    {
+                name: 'Zerion',
+                url: 'https://beta.zerion.io/',
+                description: 'Zerion is your gateway to DeFi. Watch the portfolio, trade, lend and borrow assets in a single place!',
+                icon: './images/dapps/zerion.png'
+            }
         ],
     },
     {
