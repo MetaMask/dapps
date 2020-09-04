@@ -15,6 +15,12 @@ const categories =  [
                 icon: './images/dapps/compound.finance.png'
             },
             {
+                name: 'Zerion',
+                url: 'https://app.zerion.io/',
+                description: 'Buy, sell and track DeFi assets.',
+                icon: './images/dapps/app.zerion.io.png'
+            },
+            {
                 name: 'MakerDAO CDP',
                 url: 'https://oasis.app/',
                 description: 'Trade, borrow, and save using Dai.',

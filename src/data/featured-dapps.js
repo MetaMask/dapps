@@ -14,6 +14,13 @@ export default [
 		icon: './images/dapps/opensea.io.png'
 	},
 	{
+		url: 'https://app.zerion.io/',
+        name: 'Zerion',
+        shortName: 'Zerion',
+        description: 'Buy, sell and track DeFi assets.',
+        icon: './images/dapps/app.zerion.io.png'
+    },
+	{
 		url: 'https://compound.finance/',
 		name: 'Compound',
 		shortName: 'Compound',
