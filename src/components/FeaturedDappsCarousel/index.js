@@ -3,8 +3,7 @@ import FeaturedDapp from './FeaturedDapp';
 import { useTranslation } from 'react-i18next';
 import featuredDapps from '../../data/featured-dapps';
 
-import './index.css';
-
+// import './index.css';
 
 function FeaturedDappsCarousel() {
     const { t } = useTranslation();

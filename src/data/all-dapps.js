@@ -40,6 +40,24 @@ const categories = [
                 description: '{{ poolTogetherDescription }}',
                 icon: './images/dapps/pooltogether.us.png'
             },
+            {
+                name: 'DeFi Saver',
+                url: 'https://defisaver.com/',
+                description: 'One-stop management solution for DeFi protocols.',
+                icon: './images/dapps/defi_saver.png'
+            },
+            {
+                name: 'pTokens',
+                url: 'https://dapp.ptokens.io/',
+                description: 'Make your crypto compatible with any blockchain!',
+                icon: './images/dapps/pTokens.png'
+            },
+            {
+                name: 'CoinGecko',
+                url: 'https://www.coingecko.com/en',
+                description: '360° Market Overview of Coins & Cryptocurrencies.',
+                icon: './images/dapps/coingecko.com.png'
+            },
         ],
     },
     {
@@ -53,6 +71,13 @@ const categories = [
                 description: '{{ axieInfinityDescription }}',
                 icon: './images/dapps/axieinfinity.com.png'
             },
+        ]   
+    },
+    {
+        name: 'Play Games',
+        icon: 'dice',
+        color: '#FC99EA',
+        dapps: [
             {
                 name: '{{ zeroxUniverse }}',
                 url: 'https://0xuniverse.com/',
@@ -116,6 +141,13 @@ const categories = [
                 description: '{{ kauriDescription }}',
                 icon: './images/dapps/kauri.io.png'
             },
+        ],
+    },
+    {
+        name: 'Get Crypto',
+        icon: 'credit-card',
+        color: '#1098FC',
+        dapps: [
             {
                 name: '{{ foam }}',
                 url: 'https://map.foam.space',
@@ -177,6 +209,13 @@ const categories = [
                 description: '{{ kyberSwapDescription }}',
                 icon: './images/dapps/kyber.network.png'
             },
+        ]   
+    },
+    {
+        name: 'Social',
+        icon: 'comment-alt',
+        color: '#F8CD45',
+        dapps: [
             {
                 name: '{{ coinGecko }}',
                 url: 'https://www.coingecko.com/en',
@@ -188,7 +227,7 @@ const categories = [
     {
         name: '{{ news }}',
         icon: 'newspaper',
-        color: '#838c96',
+        color: '#FF849A',
         dapps: [
             {
                 name: '{{ civil }}',
