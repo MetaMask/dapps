@@ -32,12 +32,11 @@
 }
 
 .dapp-category-name {
-    margin-left: 14px;
+    display: flex;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 20px;
-    text-align: center;
     color: #24292E;
+    padding: 8px;
 }
 
