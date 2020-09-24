@@ -19,16 +19,18 @@ export default class DappCategory extends Component {
         return (
             // eslint-disable-next-line jsx-a11y/anchor-is-valid
             <Link
-                className={'dapp-category'}
+                className={'dapp-category-container'}
                 to={url}
                 onClick={this.track}
             >
-                <FontAwesomeIcon
-                    className={'dapp-category-icon'}    
-                    icon={icon}
-                    color={color}
-                />
-                <span className={'dapp-category-name'} >{name}</span>
+                <div className={'dapp-category'}>
+                    <FontAwesomeIcon
+                        className={'dapp-category-icon'}    
+                        icon={icon}
+                        color={color}
+                    />
+                    <span className={'dapp-category-name'} >{name}</span>
+                </div>
             </Link>
         );
     }
