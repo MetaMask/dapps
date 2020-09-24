@@ -54,7 +54,7 @@ const categories =  [
                 name: 'Aave',
                 url: 'https://aave.com/',
                 description: 'An open-source, non-custodial protocol enabling the creation of money markets',
-                icon: './images/dapps/aave.com.svg'
+                icon: './images/dapps/aave.com.png'
             },
             {
                 name: 'Zerion',
