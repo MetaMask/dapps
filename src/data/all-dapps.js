@@ -220,13 +220,6 @@ const categories =  [
                 description: 'Creating deep on-chain liquidity using advanced bonding curves',
                 icon: './images/dapps/curve.fi.png'
             },
-        ]   
-    },
-    {
-        name: 'Play Games',
-        icon: 'dice',
-        color: '#FC99EA',
-        dapps: [
             {
                 name: 'My Crypto Heroes',
                 url: 'https://www.mycryptoheroes.net/home',
@@ -263,7 +256,7 @@ const categories =  [
                 description: 'Decentralized city builder strategy game.',
                 icon: './images/dapps/megacryptopolis.png'
             },
-        ],
+        ]   
     },
     {
         name: 'Get crypto',
