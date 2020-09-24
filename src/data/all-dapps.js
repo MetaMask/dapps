@@ -80,6 +80,12 @@ const categories =  [
                 description: 'A people-powered alternative to insurance',
                 icon: './images/dapps/nexusmutual.io.png'
             },
+            {
+                name: 'Curve',
+                url: 'https://www.curve.fi/',
+                description: 'Creating deep on-chain liquidity using advanced bonding curves',
+                icon: './images/dapps/curve.fi.png'
+            },
         ],
     },
     {
@@ -213,12 +219,6 @@ const categories =  [
                 url: 'https://makersplace.com/',
                 description: 'Collect truly rare digital artworks',
                 icon: './images/dapps/makersplace.com.jpg'
-            },
-            {
-                name: 'Curve',
-                url: 'https://www.curve.fi/',
-                description: 'Creating deep on-chain liquidity using advanced bonding curves',
-                icon: './images/dapps/curve.fi.png'
             },
             {
                 name: 'My Crypto Heroes',
