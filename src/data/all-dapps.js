@@ -44,6 +44,42 @@ const categories =  [
                 description: 'Manage your DeFi assets and liabilities in one simple interface.',
                 icon: './images/dapps/defizap.png'
             },
+            {
+                name: 'Yearn',
+                url: 'https://yearn.finance/',
+                description: 'An ecosystem of aggregators that utilize lending services to optimize your token lending',
+                icon: './images/dapps/yearn.finance.png'
+            },
+            {
+                name: 'Aave',
+                url: 'https://aave.com/',
+                description: 'An open-source, non-custodial protocol enabling the creation of money markets',
+                icon: './images/dapps/aave.com.svg'
+            },
+            {
+                name: 'Zerion',
+                url: 'https://zerion.io/',
+                description: 'Zerion is the easiest way to build and manage your entire DeFi portfolio from one place',
+                icon: './images/dapps/zerion.io.png'
+            },
+            {
+                name: 'Token Sets',
+                url: 'https://www.tokensets.com/',
+                description: 'Manage your crypto porfolio',
+                icon: './images/dapps/tokensets.com.png'
+            },
+            {
+                name: 'Pickle Finance',
+                url: 'https://pickle.finance',
+                description: 'Stabilize stablecoins',
+                icon: './images/dapps/pickle.finance.jpeg'
+            },
+            {
+                name: 'Nexus Mutual',
+                url: 'https://nexusmutual.io/',
+                description: 'A people-powered alternative to insurance',
+                icon: './images/dapps/nexusmutual.io.png'
+            },
         ],
     },
     {
@@ -92,6 +128,18 @@ const categories =  [
                 url: 'https://instant.airswap.io/',
                 description: 'Trade Tokens Easily, Securely, & Without Trading Fees',
                 icon: './images/dapps/instant.airswap.io.png'
+            },
+            {
+                name: 'Balancer',
+                url: 'https://balancer.exchange/#/swap',
+                description: 'Swap ERC20 tokens trustlessly across all Balancer liquidity pools.balancer.exchange',
+                icon: './images/dapps/balancer.exchange.png'
+            },
+            {
+                name: 'Matcha',
+                url: 'https://matcha.xyz/',
+                description: 'Simple crypto trading for everyone',
+                icon: './images/dapps/matcha.xyz.png'
             },
         ]   
     },
@@ -147,6 +195,30 @@ const categories =  [
                 url: 'https://www.cryptokitties.co/',
                 description: 'Collect, breed and trade unique CryptoKitties.',
                 icon: './images/dapps/cryptokitties.co.png'
+            },
+            {
+                name: 'Super Rare',
+                url: 'https://superrare.co/',
+                description: 'Discover and collect digital artworks.',
+                icon: './images/dapps/superrare.co.jpg'
+            },
+            {
+                name: 'Rarible',
+                url: 'https://rarible.com/',
+                description: 'Create and sell digital collectibles.',
+                icon: './images/dapps/rarible.com.jpg'
+            },
+            {
+                name: 'Makersplace',
+                url: 'https://makersplace.com/',
+                description: 'Collect truly rare digital artworks',
+                icon: './images/dapps/makersplace.com.jpg'
+            },
+            {
+                name: 'Curve',
+                url: 'https://www.curve.fi/',
+                description: 'Creating deep on-chain liquidity using advanced bonding curves',
+                icon: './images/dapps/curve.fi.png'
             },
         ]   
     },
@@ -308,6 +380,18 @@ const categories =  [
                 url: 'https://www.coingecko.com/en',
                 description: 'Cryptocurrency Prices & Market Capitalization.',
                 icon: './images/dapps/coingecko.com.png'
+            },
+            {
+                name: 'DeCrypt',
+                url: 'https://decrypt.co/',
+                description: 'News about Ethereum, Bitcoin and Web3',
+                icon: './images/dapps/decrypt.co.jpg'
+            },
+            {
+                name: 'Defipulse',
+                url: 'https://defipulse.com/',
+                description: 'The analytics + rankings hub for DeFi',
+                icon: './images/dapps/defipulse.com.png'
             },
         ],
     }
