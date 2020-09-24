@@ -4,7 +4,7 @@ library.add(faCreditCard, faDice, faCommentAlt, faMoneyBillWave, faNewspaper, fa
 
 const categories =  [
     {
-        name: 'DeFi',
+        name: 'Decentralized finance',
         icon: 'money-bill-wave',
         color: '#5cd879',
         dapps: [
@@ -19,12 +19,6 @@ const categories =  [
                 url: 'https://oasis.app/',
                 description: 'Trade, borrow, and save using Dai.',
                 icon: './images/dapps/cdp.makerdao.com.png'
-            },
-            {
-                name: 'AirSwap',
-                url: 'https://instant.airswap.io/',
-                description: 'Find Tokens, Get Best Prices, & Make Instant Trades.',
-                icon: './images/dapps/instant.airswap.io.png'
             },
             {
                 name: 'PoolTogether',
@@ -45,15 +39,15 @@ const categories =  [
                 icon: './images/dapps/pTokens.png'
             },
             {
-                name: 'CoinGecko',
-                url: 'https://www.coingecko.com/en',
-                description: '360° Market Overview of Coins & Cryptocurrencies.',
-                icon: './images/dapps/coingecko.com.png'
+                name: 'Zapper.fi',
+                url: 'https://zapper.fi',
+                description: 'Manage your DeFi assets and liabilities in one simple interface.',
+                icon: './images/dapps/defizap.png'
             },
         ],
     },
     {
-        name: 'Exchanges',
+        name: 'Decentralized exchanges',
         icon: 'exchange-alt',
         color: '#bbb9f3',
         dapps: [
@@ -88,21 +82,21 @@ const categories =  [
                 icon: './images/dapps/totle.jpeg'
             },
             {
-                name: 'DeFiZap',
-                url: 'https://zapper.fi',
-                description: 'Deploy capital to unique opportunities in open finance in one transaction.',
-                icon: './images/dapps/defizap.png'
-            },
-            {
                 name: 'Radar Relay',
                 url: 'https://relay.radar.tech/',
                 description: 'Simple and secure wallet to wallet trading with the best prices in DeFi.',
                 icon: './images/dapps/radar_relay.png'
             },
+            {
+                name: 'AirSwap',
+                url: 'https://instant.airswap.io/',
+                description: 'Trade Tokens Easily, Securely, & Without Trading Fees',
+                icon: './images/dapps/instant.airswap.io.png'
+            },
         ]   
     },
     {
-        name: 'Collectibles',
+        name: 'Art & collectibles',
         icon: 'store',
         color: '#F29D62',
         dapps: [
@@ -136,6 +130,24 @@ const categories =  [
                 description: 'Collect and raise fantasy creatures called Axie.',
                 icon: './images/dapps/axieinfinity.com.png'
             },
+            {
+                name: 'Sorare',
+                url: 'https://sorare.com/',
+                description: 'Global Fantasy Football. Collect limited edition digital collectibles.',
+                icon: './images/dapps/sorare.jpg'
+            },
+            {
+                name: 'Clovers Network',
+                url: 'https://clovers.network',
+                description: 'Discover, collect & trade cryptographic icons.',
+                icon: './images/dapps/clovers.png'
+            },
+            {
+                name: 'CryptoKitties',
+                url: 'https://www.cryptokitties.co/',
+                description: 'Collect, breed and trade unique CryptoKitties.',
+                icon: './images/dapps/cryptokitties.co.png'
+            },
         ]   
     },
     {
@@ -150,22 +162,10 @@ const categories =  [
                 icon: './images/dapps/my_crypto_heroes.jpg'
             },
             {
-                name: 'CryptoKitties',
-                url: 'https://www.cryptokitties.co/',
-                description: 'Collect, breed and trade unique CryptoKitties.',
-                icon: './images/dapps/cryptokitties.co.png'
-            },
-            {
                 name: 'CryptoDozer',
                 url: 'https://market.playdapp.io',
                 description: 'A blockchain-powered arcade game.',
                 icon: './images/dapps/cryptodozer.io.png'
-            },
-            {
-                name: 'Clovers Network',
-                url: 'https://clovers.network',
-                description: 'Discover, collect & trade cryptographic icons.',
-                icon: './images/dapps/clovers.png'
             },
             {
                 name: 'BRAVE FRONTIER HEROES',
@@ -190,12 +190,6 @@ const categories =  [
                 url: 'http://mcp3d.com',
                 description: 'Decentralized city builder strategy game.',
                 icon: './images/dapps/megacryptopolis.png'
-            },
-            {
-                name: 'Sorare',
-                url: 'https://sorare.com/',
-                description: 'Global Fantasy Football - Collect your favorite players, manage your team, earn prizes!',
-                icon: './images/dapps/sorare.jpg'
             },
         ],
     },
@@ -293,16 +287,10 @@ const categories =  [
         ],
     },
     {
-        name: 'News',
+        name: 'Markets',
         icon: 'newspaper',
         color: '#FF849A',
         dapps: [
-            {
-                name: 'Civil',
-                url: 'https://civil.co/',
-                description: 'A community-owned platform for independent journalism.',
-                icon: './images/dapps/civil.co.png'
-            },
             {
                 name: 'Popula',
                 url: 'https://popula.com/',
@@ -314,6 +302,12 @@ const categories =  [
                 url: 'https://www.coindesk.com/',
                 description: 'Blockchain news.',
                 icon: './images/dapps/coindesk.com.png'
+            },
+            {
+                name: 'CoinGecko',
+                url: 'https://www.coingecko.com/en',
+                description: 'Cryptocurrency Prices & Market Capitalization.',
+                icon: './images/dapps/coingecko.com.png'
             },
         ],
     }
