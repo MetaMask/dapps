@@ -223,37 +223,37 @@ const categories =  [
             {
                 name: 'My Crypto Heroes',
                 url: 'https://www.mycryptoheroes.net/home',
-                description: 'MCH is a strategic turn based battle game, featuring PvE and PvP modes to fight for NFTs.',
+                description: 'Collect and battle heroes',
                 icon: './images/dapps/my_crypto_heroes.jpg'
             },
             {
-                name: 'CryptoDozer',
+                name: 'CryptoDozer Marketplace',
                 url: 'https://market.playdapp.io',
-                description: 'A blockchain-powered arcade game.',
+                description: 'From sales to purchases, marketplace is reliable and fast',
                 icon: './images/dapps/cryptodozer.io.png'
             },
             {
-                name: 'BRAVE FRONTIER HEROES',
+                name: 'Brave Frontier Heroes',
                 url: 'https://bravefrontierheroes.com',
-                description: 'Brave Frontier Heroes is a wildly popular Blockchain game, let alone huge in Japan.',
+                description: 'Use heroes in turn-based quests and battles.',
                 icon: './images/dapps/brave_frontier_heroes.png'
             },
            {
                 name: 'Blockchain Cuties',
                 url: 'https://blockchaincuties.com/',
-                description: 'A multi-blockchain game with collectibles.',
+                description: 'Cuties are cats, dogs, and bears that go on adventures.',
                 icon: './images/dapps/blockchaincuties.com.png'
             },
             {
-                name: 'F1® Delta Time',
+                name: 'F1 Delta Time',
                 url: 'https://www.f1deltatime.com/',
-                description: 'This game centres around the collection and trading of unique Cars, Drivers & Components.',
+                description: 'Own F1 Delta collectibles & stake to earn',
                 icon: './images/dapps/f1deltatime.com.png'
             },
             {
-                name: 'MegaCryptoPolis 3D',
+                name: 'MegaCryptoPolis',
                 url: 'http://mcp3d.com',
-                description: 'Decentralized city builder strategy game.',
+                description: 'Collect land and build a blockchain city.',
                 icon: './images/dapps/megacryptopolis.png'
             },
         ]   
