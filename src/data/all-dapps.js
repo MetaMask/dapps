@@ -223,49 +223,6 @@ const categories =  [
         ]   
     },
     {
-        name: 'Play Games',
-        icon: 'dice',
-        color: '#FC99EA',
-        dapps: [
-            {
-                name: 'My Crypto Heroes',
-                url: 'https://www.mycryptoheroes.net/home',
-                description: 'MCH is a strategic turn based battle game, featuring PvE and PvP modes to fight for NFTs.',
-                icon: './images/dapps/my_crypto_heroes.jpg'
-            },
-            {
-                name: 'CryptoDozer',
-                url: 'https://market.playdapp.io',
-                description: 'A blockchain-powered arcade game.',
-                icon: './images/dapps/cryptodozer.io.png'
-            },
-            {
-                name: 'BRAVE FRONTIER HEROES',
-                url: 'https://bravefrontierheroes.com',
-                description: 'Brave Frontier Heroes is a wildly popular Blockchain game, let alone huge in Japan.',
-                icon: './images/dapps/brave_frontier_heroes.png'
-            },
-           {
-                name: 'Blockchain Cuties',
-                url: 'https://blockchaincuties.com/',
-                description: 'A multi-blockchain game with collectibles.',
-                icon: './images/dapps/blockchaincuties.com.png'
-            },
-            {
-                name: 'F1® Delta Time',
-                url: 'https://www.f1deltatime.com/',
-                description: 'This game centres around the collection and trading of unique Cars, Drivers & Components.',
-                icon: './images/dapps/f1deltatime.com.png'
-            },
-            {
-                name: 'MegaCryptoPolis 3D',
-                url: 'http://mcp3d.com',
-                description: 'Decentralized city builder strategy game.',
-                icon: './images/dapps/megacryptopolis.png'
-            },
-        ],
-    },
-    {
         name: 'Get crypto',
         icon: 'credit-card',
         color: '#1098FC',
