@@ -99,6 +99,12 @@ const categories =  [
                 description: 'Simple and secure wallet to wallet trading with the best prices in DeFi.',
                 icon: './images/dapps/radar_relay.png'
             },
+            {
+                name: 'dYdX',
+                url: 'https://trade.dydx.exchange/',
+                description: 'dYdX is a decentralized and non-custodial trading platform offering perpetual, margin, and spot trading.',
+                icon: './images/dapps/dydx.png'
+            },
         ]   
     },
     {
