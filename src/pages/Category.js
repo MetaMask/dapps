@@ -30,7 +30,7 @@ export default class Category extends Component {
             <div>
                 <Navbar title={category.name} />
                 <div className={'category-wrapper'}>
-                {   category.dapps.map( (dapp, i) => (
+                {   category.dapps.sort((a, b) => a.name.charCodeAt(0) - b.name.charCodeAt(0)).map( (dapp, i) => (
                         <Dapp data={dapp} key={dapp.url} position={i} />
                     ))
                 }
