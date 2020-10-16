@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 export function trackEvent(action, data){
-    if(mixpanel && window.__mmMetametrics){
+    if(mixpanel && window.__mmMetametrics && mixpanel.track){
         const category = action.category
         delete action.category
         mixpanel.track(
