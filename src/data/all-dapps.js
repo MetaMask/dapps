@@ -100,6 +100,12 @@ const categories =  [
                 icon: './images/dapps/uniswap.exchange.png'
             },
             {
+                name: 'dYdX',
+                url: 'https://trade.dydx.exchange/',
+                description: 'A decentralized and non-custodial trading platform offering perpetual margin, and spot trading',
+                icon: './images/dapps/dydx.png'
+            },
+            {
                 name: 'Kyber Swap',
                 url: 'https://kyberswap.com/',
                 description: 'A simple way to exchange tokens',
