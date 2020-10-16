@@ -157,7 +157,7 @@ const categories =  [
             },
             {
                 name: 'CryptoDozer',
-                url: 'http://cryptodozer.io/',
+                url: 'https://cryptodozer.io/',
                 description: 'A blockchain-powered arcade game.',
                 icon: './images/dapps/cryptodozer.io.png'
             },
