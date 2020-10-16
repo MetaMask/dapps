@@ -151,7 +151,7 @@ const categories =  [
                 name: 'Matcha',
                 url: 'https://matcha.xyz/',
                 description: 'Simple crypto trading for everyone',
-                icon: './images/dapps/matcha.xyz.png'
+                icon: './images/dapps/matcha.png'
             },
         ]   
     },
