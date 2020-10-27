@@ -33,6 +33,12 @@ const categories =  [
                 icon: './images/dapps/defi_saver.png'
             },
             {
+                name: 'Shell Protocol',
+                url: 'https://shells.exchange',
+                description: 'Earn yield, swap stablecoins and bootstrap the internet monetary system.',
+                icon: './images/dapps/shellprotocol.us.png'
+            },
+            {
                 name: 'pTokens',
                 url: 'https://dapp.ptokens.io/',
                 description: 'Make your crypto compatible with any blockchain!',
