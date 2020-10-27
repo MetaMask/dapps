@@ -36,7 +36,7 @@ const categories =  [
                 name: 'Shell Protocol',
                 url: 'https://shells.exchange',
                 description: 'Earn yield, swap stablecoins and bootstrap the internet monetary system.',
-                icon: './images/dapps/shellprotocol.us.png'
+                icon: './images/dapps/shell.protocol.png'
             },
             {
                 name: 'pTokens',
