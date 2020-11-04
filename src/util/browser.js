@@ -13,16 +13,18 @@ import URL from 'url-parse';
 export default function onUrlSubmit(input, searchEngine = 'DuckDuckGo', defaultProtocol = 'https://') {
 	//Check if it's a url or a keyword
 	const res = input.match(/^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w.-]+)+[\w\-._~:/?#[\]@!&',;=.+]+$/g);
+	
 	if (res === null) {
 		// In case of keywords we default to google search
 		let searchUrl = 'https://www.google.com/search?q=' + escape(input);
-		if (searchEngine === 'DuckDuckGo') {
-			searchUrl = 'https://duckduckgo.com/?q=' + escape(input);
-		}
+		if (searchEngine === 'DuckDuckGo') searchUrl = 'https://duckduckgo.com/?q=' + escape(input);
+
 		return searchUrl;
 	}
+
 	const hasProtocol = input.match(/^[a-z]*:\/\//);
 	const sanitizedURL = hasProtocol ? input : `${defaultProtocol}${input}`;
+
 	return sanitizedURL;
 }
 
