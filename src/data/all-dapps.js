@@ -1,6 +1,6 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCreditCard,faDice, faCommentAlt, faMoneyBillWave, faNewspaper, faWrench, faExchangeAlt, faStore  } from '@fortawesome/free-solid-svg-icons'
-library.add(faCreditCard, faDice, faCommentAlt, faMoneyBillWave, faNewspaper, faWrench, faExchangeAlt, faStore)
+import { faCreditCard,faDice, faCommentAlt, faMoneyBillWave, faNewspaper, faTram, faWrench, faExchangeAlt, faStore  } from '@fortawesome/free-solid-svg-icons'
+library.add(faCreditCard, faDice, faCommentAlt, faMoneyBillWave, faNewspaper, faWrench, faExchangeAlt, faTram, faStore)
 
 const categories =  [
     {
