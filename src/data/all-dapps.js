@@ -393,6 +393,19 @@ const categories =  [
                 icon: './images/dapps/defipulse.com.png'
             },
         ],
+    },
+    {
+        name: 'Ramps',
+        icon: 'tram',
+        color: '#5a58d4',
+        dapps: [
+            {
+                name: 'Mooni',
+                url: 'https://app.mooni.tech/',
+                description: 'Cash out cryptocurrencies directly to your bank account',
+                icon: './images/dapps/mooni.tech.png'
+            },
+        ],
     }
 ];
 
