@@ -153,6 +153,12 @@ const categories =  [
                 description: 'Simple crypto trading for everyone',
                 icon: './images/dapps/matcha.png'
             },
+            {
+                name: 'Liquifi',
+                url: 'https://liquifi.org/',
+                description: 'A decentralized token exchange with low slippage and zero-fee swap opportunities',
+                icon: './images/dapps/liquifi.org.svg'
+            },
         ]   
     },
     {
