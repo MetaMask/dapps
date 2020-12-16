@@ -166,6 +166,12 @@ const categories =  [
                 description: 'miime is an NFT marketplace catering to blockchain gamers in Japan and across the world',
                 icon: './images/dapps/miime.png'
             },
+              {
+                name: 'Mintable',
+                url: 'https://mintable.app',
+                description: 'Mintable is a next generation NFT marketplace, the easiest place to trade NFTs and create your own.',
+                icon: './images/dapps/mintable.png'
+            },
             {
                 name: 'OpenSea',
                 url: 'https://opensea.io/',
@@ -294,12 +300,6 @@ const categories =  [
         icon: 'wrench',
         color: '#838c96',
         dapps: [
-            {
-                name: 'Mintable',
-                url: 'https://mintable.app',
-                description: 'Mintable is a way for anyone to deploy a NFT smart contract and create their own NFTs',
-                icon: './images/dapps/mintable.png'
-            },
             {
                 name: 'Ethereum Name Service',
                 url: 'https://app.ens.domains/',
