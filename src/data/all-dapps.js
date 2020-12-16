@@ -39,10 +39,10 @@ const categories =  [
                 icon: './images/dapps/pTokens.png'
             },
             {
-                name: 'Zapper.fi',
+                name: 'Zapper',
                 url: 'https://zapper.fi',
                 description: 'Manage your DeFi assets and liabilities in one simple interface',
-                icon: './images/dapps/defizap.png'
+                icon: './images/dapps/zapper.svg'
             },
             {
                 name: 'Yearn',
