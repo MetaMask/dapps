@@ -1,6 +1,6 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCreditCard,faDice, faCommentAlt, faMoneyBillWave, faNewspaper, faWrench, faExchangeAlt, faStore  } from '@fortawesome/free-solid-svg-icons'
-library.add(faCreditCard, faDice, faCommentAlt, faMoneyBillWave, faNewspaper, faWrench, faExchangeAlt, faStore)
+import { faCreditCard,faDice, faCommentAlt, faMoneyBillWave, faNewspaper, faTram, faWrench, faExchangeAlt, faStore  } from '@fortawesome/free-solid-svg-icons'
+library.add(faCreditCard, faDice, faCommentAlt, faMoneyBillWave, faNewspaper, faWrench, faExchangeAlt, faTram, faStore)
 
 const categories =  [
     {
@@ -391,6 +391,19 @@ const categories =  [
                 url: 'https://defipulse.com/',
                 description: 'The analytics + rankings hub for DeFi',
                 icon: './images/dapps/defipulse.com.png'
+            },
+        ],
+    },
+    {
+        name: 'Ramps',
+        icon: 'tram',
+        color: '#5a58d4',
+        dapps: [
+            {
+                name: 'Mooni',
+                url: 'https://app.mooni.tech/',
+                description: 'Cash out cryptocurrencies directly to your bank account',
+                icon: './images/dapps/mooni.tech.png'
             },
         ],
     }
