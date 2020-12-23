@@ -392,6 +392,13 @@ const categories =  [
                 description: 'The analytics + rankings hub for DeFi',
                 icon: './images/dapps/defipulse.com.png'
             },
+            {
+                name: 'TOURISTOKEN',
+                url: 'https://touristoken.com',
+                description: 'Booking Dapp',
+                icon: './images/dapps/touristoken.com.png'
+            
+            },
         ],
     }
 ];
