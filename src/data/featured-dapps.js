@@ -41,5 +41,12 @@ export default [
 		shortName: 'Aragon',
 		description: 'Aragon lets you freely organize and collaborate without borders or intermediaries.',
 		icon: './images/dapps/aragon.org.png'
+	},
+	{
+		url: 'https://touristoken.com',
+		name: 'TOURISTOKEN',
+		shortName: 'TOU',
+		description: 'Booking Dapp.',
+		icon: './images/dapps/touristoken.com.png'
 	}
 ];
