@@ -1,57 +1,31 @@
-import React, { Component } from 'react'
+import React, { useEffect, useState } from 'react'
 import { getHost } from '../../util/browser';
 import Dapp from '../Dapp';
 import './index.css';
 
-export default class Favorites extends Component {
-    state = {
-        favorites: []
-    }
+export default function Favorites() {
+    const [favorites, setFavorites] = useState([]);
 
-    componentDidMount(){
-        if(window.__mmFavorites){
-            this.setState({ favorites: window.__mmFavorites.reverse() });
+    useEffect(() => {
+        if (window.__mmFavorites) {
+            setFavorites(window.__mmFavorites.reverse());
         }
-        
+
         window.addEventListener('message', ({ data }) => {
-            if(data === 'updateFavorites'){
-                if(window.__mmFavorites){
-                    this.setState({ favorites: window.__mmFavorites.reverse() });
+            if (data === 'updateFavorites') {
+                if (window.__mmFavorites) {
+                    setFavorites(window.__mmFavorites.reverse())
                 }
             }
         });
+    }, [])
 
-    }
-    
-    onClose = async (url) => {
+    const onClose = async (url) => {
         const { favorites } = await window.ethereum.send('metamask_removeFavorite', [url]);
-        this.setState({ favorites: favorites.reverse() });
+        setFavorites(favorites.reverse())
     }
 
-    renderFavorites(){
-        return (
-            <div className={'favorites'}>
-            { 
-                this.state.favorites.map( (dapp, i) => (
-                    <Dapp 
-                        data={{
-                            ...dapp,
-                            icon: `https://api.faviconkit.com/${getHost(dapp.url)}/64`,
-                            description: null
-                        }}
-                        key={`fav-${dapp.url}`}
-                        size={'small'}
-                        closable
-                        onClose={this.onClose}
-                        position={i}
-                    />
-                ))
-            }
-            </div>
-        );
-    }
-
-    renderEmpty(){
+    const renderEmpty = () => {
         return (
             <div className={'favorites-empty'}>
                 <p>You have no favorites yet</p>
@@ -59,11 +33,32 @@ export default class Favorites extends Component {
         );
     }
 
-    render(){
-        if(!this.state.favorites || !this.state.favorites.length) {
-           return this.renderEmpty();
-        }
-
-        return this.renderFavorites()
+    const renderFavorites = () => {
+        return (
+            <div className={'favorites'}>
+                {
+                    favorites.map((dapp, i) => (
+                        <Dapp
+                            data={{
+                                ...dapp,
+                                icon: `https://api.faviconkit.com/${getHost(dapp.url)}/64`,
+                                description: null
+                            }}
+                            key={`fav-${dapp.url}`}
+                            size={'small'}
+                            closable
+                            onClose={onClose}
+                            position={i}
+                        />
+                    ))
+                }
+            </div>
+        );
     }
+
+    if (!favorites || !favorites.length) {
+        return renderEmpty();
+    }
+
+    return renderFavorites()
 }

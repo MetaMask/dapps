@@ -1,44 +1,40 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import onUrlSubmit from '../../util/browser';
 import './index.css';
 
-export default class Autocomplete extends Component {
-    state = {
-        value: ''
+export default function Autocomplete(){
+    const [value, setValue] = useState('')
+
+    const handleChange = (event) => {
+        setValue(event.target.value);
     }
 
-    handleChange = (event) => {
-        this.setState({value: event.target.value});
-    }
-
-    onFocus = (event) => {
+    const onFocus = (event) => {
         event.preventDefault();
-        window.ethereum.send('metamask_showAutocomplete');
+        if(window.ethereum) window.ethereum.send('metamask_showAutocomplete');
     };
 
-    handleSubmit = (event) => {
+    const handleSubmit = (event) => {
         event.preventDefault();
         const searchEngine = window.__mmSearchEngine || 'DuckDuckGo';
-        const sanitizedInput = onUrlSubmit(this.state.value, searchEngine);
+        const sanitizedInput = onUrlSubmit(value, searchEngine);
         window.location.href = sanitizedInput;
     }
 
-   render(){
-        return (
-            <form 
-                className={'autocomplete'}
-                onSubmit={this.handleSubmit}
-            >
-                <input
-                    autoCapitalize="none"
-                    type={'text'} 
-                    placeholder={'Search or Type URL'} 
-                    className={'autocomplete-input'}
-                    value={this.state.value}
-                    onChange={this.handleChange} 
-                    onFocus={this.onFocus}
-                />
-            </form>
-        );
-    }
+    return (
+        <form 
+            className={'autocomplete'}
+            onSubmit={handleSubmit}
+        >
+            <input
+                autoCapitalize="none"
+                type={'text'} 
+                placeholder={'Search or Type URL'} 
+                className={'autocomplete-input'}
+                value={value}
+                onChange={handleChange} 
+                onFocus={onFocus}
+            />
+        </form>
+    );
 }

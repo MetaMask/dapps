@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
 import Header from '../components/Header/';
 import Tabs from '../components/Tabs/';
 import Autocomplete from '../components/Autocomplete/';
@@ -6,7 +6,7 @@ import Autocomplete from '../components/Autocomplete/';
 import ExploreDapps from '../components/ExploreDapps/';
 import Favorites from '../components/Favorites/';
 import TakeATour from '../components/TakeATour/';
-import{trackEvent, ANALYTICS_EVENT_OPTS} from '../util/analytics';
+import { trackEvent, ANALYTICS_EVENT_OPTS } from '../util/analytics';
 
 const isMobile = {
     Android: function () {
@@ -29,27 +29,22 @@ const isMobile = {
     }
 };
 
-export default class Home extends Component {
-    componentDidMount() {
-      trackEvent(ANALYTICS_EVENT_OPTS.IMPRESSION);
-    }
-
-    render() {
-        return (
-            <div>
-                <Header />
-                <Autocomplete />
-                {/* <FeaturedDappsCarousel /> */}
-                <Tabs>
-                    <div label="Explore sites">
-                        <ExploreDapps />
-                    </div>
-                    <div label="Favorites">
-                        <Favorites />
-                    </div>
-                </Tabs>
-                {isMobile.any() ? <TakeATour /> : ''}
-            </div>
-        );
-    }
+export default function Home() {
+    useEffect(() => trackEvent(ANALYTICS_EVENT_OPTS.IMPRESSION))
+    return (
+        <div>
+            <Header />
+            <Autocomplete />
+            {/* <FeaturedDappsCarousel /> */}
+            <Tabs>
+                <div label="Explore sites">
+                    <ExploreDapps />
+                </div>
+                <div label="Favorites">
+                    <Favorites />
+                </div>
+            </Tabs>
+            {isMobile.any() ? <TakeATour /> : ''}
+        </div>
+    );
 }

@@ -69,6 +69,12 @@ const categories =  [
                 icon: './images/dapps/tokensets.com.png'
             },
             {
+                name: 'Decentralized Bank',
+                url: 'https://decentralized-bank.web.app',
+                description: 'Send, Receive ethers easily.',
+                icon: './images/dapps/decentralized-bank.web.app.jpg'
+            },
+            {
                 name: 'Pickle Finance',
                 url: 'https://pickle.finance',
                 description: 'Stabilize stablecoins',
