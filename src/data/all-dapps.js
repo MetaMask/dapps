@@ -2,6 +2,11 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCreditCard,faDice, faCommentAlt, faMoneyBillWave, faNewspaper, faWrench, faExchangeAlt, faStore  } from '@fortawesome/free-solid-svg-icons'
 library.add(faCreditCard, faDice, faCommentAlt, faMoneyBillWave, faNewspaper, faWrench, faExchangeAlt, faStore)
 
+const PLATFORM = 'platform';
+const IOS = 'ios';
+const params = new URLSearchParams(window.location.search);
+const platform = params.get(PLATFORM);
+
 const categories =  [
     {
         name: 'Decentralized finance',
@@ -157,6 +162,7 @@ const categories =  [
     },
     {
         name: 'Art & collectibles',
+        displayIos: false,
         icon: 'store',
         color: '#F29D62',
         dapps: [
@@ -396,5 +402,7 @@ const categories =  [
     }
 ];
 
+// hide any of the above on iOS when displayIos is false
+const filtered = categories.filter(({ displayIos = true }) => !(platform === IOS && !displayIos));
 
-export default categories;
+export default filtered;
