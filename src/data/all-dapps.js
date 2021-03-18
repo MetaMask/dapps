@@ -1,10 +1,12 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
+import { isIOS } from 'react-device-detect';
 import { faCreditCard,faDice, faCommentAlt, faMoneyBillWave, faNewspaper, faWrench, faExchangeAlt, faStore  } from '@fortawesome/free-solid-svg-icons'
 library.add(faCreditCard, faDice, faCommentAlt, faMoneyBillWave, faNewspaper, faWrench, faExchangeAlt, faStore)
 
 const categories =  [
     {
         name: 'Decentralized finance',
+        displayIos: false,
         icon: 'money-bill-wave',
         color: '#5cd879',
         dapps: [
@@ -90,6 +92,7 @@ const categories =  [
     },
     {
         name: 'Decentralized exchanges',
+        displayIos: false,
         icon: 'exchange-alt',
         color: '#bbb9f3',
         dapps: [
@@ -157,6 +160,7 @@ const categories =  [
     },
     {
         name: 'Art & collectibles',
+        displayIos: false,
         icon: 'store',
         color: '#F29D62',
         dapps: [
@@ -272,6 +276,7 @@ const categories =  [
     },
     {
         name: 'Get crypto',
+        displayIos: false,
         icon: 'credit-card',
         color: '#1098FC',
         dapps: [
@@ -297,6 +302,7 @@ const categories =  [
     },
     {
         name: 'Developer tools',
+        displayIos: false,
         icon: 'wrench',
         color: '#838c96',
         dapps: [
@@ -328,6 +334,7 @@ const categories =  [
     },
     {
         name: 'Social',
+        displayIos: false,
         icon: 'comment-alt',
         color: '#F8CD45',
         dapps: [
@@ -359,6 +366,7 @@ const categories =  [
     },
     {
         name: 'Markets',
+        displayIos: false,
         icon: 'newspaper',
         color: '#FF849A',
         dapps: [
@@ -396,5 +404,7 @@ const categories =  [
     }
 ];
 
+// hide any of the above on iOS when displayIos is false
+const filtered = categories.filter(({ displayIos = true }) => !(isIOS && !displayIos));
 
-export default categories;
+export default filtered;
