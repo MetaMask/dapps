@@ -6,7 +6,7 @@ library.add(faCreditCard, faDice, faCommentAlt, faMoneyBillWave, faNewspaper, fa
 const categories =  [
     {
         name: 'Decentralized finance',
-		displayIos: false,
+        displayIos: false,
         icon: 'money-bill-wave',
         color: '#5cd879',
         dapps: [
@@ -92,7 +92,7 @@ const categories =  [
     },
     {
         name: 'Decentralized exchanges',
-		displayIos: false,
+        displayIos: false,
         icon: 'exchange-alt',
         color: '#bbb9f3',
         dapps: [
@@ -276,7 +276,7 @@ const categories =  [
     },
     {
         name: 'Get crypto',
-		displayIos: false,
+        displayIos: false,
         icon: 'credit-card',
         color: '#1098FC',
         dapps: [
@@ -302,7 +302,7 @@ const categories =  [
     },
     {
         name: 'Developer tools',
-		displayIos: false,
+        displayIos: false,
         icon: 'wrench',
         color: '#838c96',
         dapps: [
@@ -334,7 +334,7 @@ const categories =  [
     },
     {
         name: 'Social',
-		displayIos: false,
+        displayIos: false,
         icon: 'comment-alt',
         color: '#F8CD45',
         dapps: [
@@ -366,7 +366,7 @@ const categories =  [
     },
     {
         name: 'Markets',
-		displayIos: false,
+        displayIos: false,
         icon: 'newspaper',
         color: '#FF849A',
         dapps: [

@@ -13,10 +13,10 @@ export default class Tabs extends Component {
   constructor(props) {
     super(props);
 
-	const firstChildren = props.children.find((child)=> !child.props.hide)
+    const firstTab = props.children.find((child)=> !child.props.hide)
 
     this.state = {
-      activeTab: firstChildren.props.label,
+      activeTab: firstTab.props.label,
     };
   }
 
@@ -41,7 +41,7 @@ export default class Tabs extends Component {
         <ol className="tab-list">
           {children.map((child) => {
             const { label, hide } = child.props;
-			if(hide) return null
+            if(hide) return null
 
             return (
               <Tab
@@ -55,7 +55,7 @@ export default class Tabs extends Component {
         </ol>
         <div className="tab-content">
           {children.map((child) => {
-			if(child.props.hide) return null
+            if(child.props.hide) return null
             if (child.props.label !== activeTab) return undefined;
             return child.props.children;
           })}
