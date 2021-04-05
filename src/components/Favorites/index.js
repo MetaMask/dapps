@@ -10,14 +10,12 @@ export default class Favorites extends Component {
 
     componentDidMount(){
         if(window.__mmFavorites){
-            this.setState({ favorites: window.__mmFavorites.reverse() });
+            this.setState({ favorites: window.__mmFavorites });
         }
         
-        window.addEventListener('message', ({ data }) => {
-            if(data === 'updateFavorites'){
-                if(window.__mmFavorites){
-                    this.setState({ favorites: window.__mmFavorites.reverse() });
-                }
+        window.addEventListener('message', () => {
+            if(window.__mmFavorites && JSON.stringify(this.state.favorites) !== JSON.stringify(window.__mmFavorites)){
+                this.setState({ favorites: window.__mmFavorites });
             }
         });
 

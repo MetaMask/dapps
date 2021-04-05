@@ -1,3 +1,8 @@
+.dapp {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
 .take-a-tour-wrapper {
     position: relative;
     display: flex;
