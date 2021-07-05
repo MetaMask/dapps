@@ -156,7 +156,7 @@ const categories =  [
                 description: 'Simple crypto trading for everyone',
                 icon: './images/dapps/matcha.png'
             },
-        ]   
+        ]
     },
     {
         name: 'Art & collectibles',
@@ -192,7 +192,7 @@ const categories =  [
                 name: 'Mintbase',
                 url: 'https://mintbase.io',
                 description: 'Leading non-fungible token creation tool and marketplace',
-                icon: './images/dapps/mintbase.png'  
+                icon: './images/dapps/mintbase.png'
             },
             {
                 name: 'Axie Infinity',
@@ -272,7 +272,7 @@ const categories =  [
                 description: 'Collect land and build a blockchain city.',
                 icon: './images/dapps/megacryptopolis.png'
             },
-        ]   
+        ]
     },
     {
         name: 'Get crypto',
@@ -297,6 +297,12 @@ const categories =  [
                 url: 'https://beta.cent.co/',
                 description: 'Earn ETH by creating content',
                 icon: './images/dapps/cent.co.png'
+            },
+            {
+                name: 'Alfacash',
+                url: 'https://www.alfa.cash/',
+                description: 'Buy crypto with Visa, Mastercard within a few minutes.',
+                icon: './images/dapps/alfa.cash.png'
             },
         ],
     },
@@ -330,7 +336,7 @@ const categories =  [
                 description: 'Smart contract security service for Ethereum',
                 icon: './images/dapps/mythx.png'
             },
-        ]   
+        ]
     },
     {
         name: 'Social',
