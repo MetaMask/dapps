@@ -272,6 +272,12 @@ const categories =  [
                 description: 'Collect land and build a blockchain city.',
                 icon: './images/dapps/megacryptopolis.png'
             },
+            {
+                name: 'Async Art',
+                url: 'http://async.art',
+                description: 'Create and collect #ProgrammableArt & #ProgrammableMusic: digital paintings and music split into \"Layers\" which let YOU affect the overall work.',
+                icon: './images/dapps/asyncart.jpeg'
+            }
         ]   
     },
     {
