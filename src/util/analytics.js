@@ -13,10 +13,12 @@ export function trackEvent(action, data){
 const generateOpt = (category, action, name) => ({ category, action, name });
 
 const NAMES = {
-    DAPP: 'Dapp',
-    FEATURED_DAPP: 'Featured Dapp',
+	DAPP: 'Dapp',
+	FEATURED_DAPP: 'Featured Dapp',
 	DAPP_CATEGORY: 'Dapp Category',
-    HOMEPAGE_TAB: 'Homepage Tab',
+	HOMEPAGE_TAB: 'Homepage Tab',
+	OPEN_FAVORITE: 'Opened Favorites',
+	SEARCH_USED: 'Search Used',
 };
 
 const ACTIONS = {
@@ -53,6 +55,12 @@ export const ANALYTICS_EVENT_OPTS = {
 		CATEGORIES.BROWSER_HOME,
 		ACTIONS.IMPRESSION,
 	),
+	CLICKS_FAVORITES_TAB: generateOpt(
+		NAMES.OPEN_FAVORITE
+	),
+	SEARCH_USED: generateOpt(
+		NAMES.SEARCH_USED
+	)
 };
 
 export default {trackEvent,ANALYTICS_EVENT_OPTS }
