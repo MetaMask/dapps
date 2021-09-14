@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { getHost } from '../../util/browser';
+import{trackEvent, ANALYTICS_EVENT_OPTS} from '../../util/analytics';
 import Dapp from '../Dapp';
 import './index.css';
 
@@ -24,6 +25,10 @@ export default class Favorites extends Component {
     onClose = async (url) => {
         const { favorites } = await window.ethereum.send('metamask_removeFavorite', [url]);
         this.setState({ favorites: favorites.reverse() });
+    }
+
+    trackEventFavoritesOpened() {
+        trackEvent(ANALYTICS_EVENT_OPTS.CLICKS_FAVORITES_TAB);
     }
 
     renderFavorites(){
@@ -58,6 +63,7 @@ export default class Favorites extends Component {
     }
 
     render(){
+        this.trackEventFavoritesOpened()
         if(!this.state.favorites || !this.state.favorites.length) {
            return this.renderEmpty();
         }
