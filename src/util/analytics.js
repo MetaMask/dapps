@@ -19,6 +19,8 @@ const NAMES = {
 	HOMEPAGE_TAB: 'Homepage Tab',
 	OPEN_FAVORITE: 'Opened Favorites',
 	SEARCH_USED: 'Search Used',
+	OPEN_DAPP_CATEGORY: 'Opened Dapp Category',
+	OPEN_LISTED_DAPP: 'Opened Listed Dapp',
 };
 
 const ACTIONS = {
@@ -60,6 +62,12 @@ export const ANALYTICS_EVENT_OPTS = {
 	),
 	SEARCH_USED: generateOpt(
 		NAMES.SEARCH_USED
+	),
+	OPEN_DAPP_CATEGORY: generateOpt(
+		NAMES.OPEN_DAPP_CATEGORY
+	),
+	OPEN_LISTED_DAPP: generateOpt(
+		NAMES.OPEN_LISTED_DAPP
 	)
 };
 

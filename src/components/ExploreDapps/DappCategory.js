@@ -7,13 +7,13 @@ import{trackEvent, ANALYTICS_EVENT_OPTS} from '../../util/analytics';
 import './DappCategory.css';
 
 export default class DappCategory extends Component {
-    track = () => {
-        trackEvent(ANALYTICS_EVENT_OPTS.CLICKS_DAPP_CATEGORY, { 
-            'Category' : this.props.data.name,
+    trackEventOpenDappCategory = () => {
+        trackEvent(ANALYTICS_EVENT_OPTS.OPEN_DAPP_CATEGORY, { 
+            'dapp_category_name' : this.props.data.name,
         });
     }
 
-    render(){
+    render() {
         const { name, icon, color } = this.props.data;
         const url = `/${name.toLowerCase().replace(" ", "-")}`;
         return (
@@ -21,7 +21,7 @@ export default class DappCategory extends Component {
             <Link
                 className={'dapp-category-container'}
                 to={url}
-                onClick={this.track}
+                onClick={this.trackEventOpenDappCategory}
             >
                 <div className={'dapp-category'}>
                     <FontAwesomeIcon

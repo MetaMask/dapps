@@ -5,12 +5,12 @@ import './index.css';
 
 export default class Dapp extends Component {
 
-    track = (e) => {
+    trackEventOpenListedDapp = (e) => {
         e.preventDefault();
-        trackEvent(ANALYTICS_EVENT_OPTS.CLICKS_DAPP, { 
-            'Dapp' : this.props.data.name,
-            'Url': this.props.data.url,
-            'Position': this.props.position + 1
+        trackEvent(ANALYTICS_EVENT_OPTS.OPEN_LISTED_DAPP, { 
+            'dapp_name' : this.props.data.name,
+            'dapp_url': this.props.data.url,
+            'position': this.props.position + 1
         });
         window.location.href = this.props.data.url;
     }
@@ -31,7 +31,7 @@ export default class Dapp extends Component {
             <a
                 className={'dapp'}
                 href={url}
-                onClick={this.track}
+                onClick={this.trackEventOpenListedDapp}
             >
                 <img 
                     src={icon} 
