@@ -268,10 +268,16 @@ const categories =  [
             },
             {
                 name: 'MegaCryptoPolis',
-                url: 'http://mcp3d.com',
+                url: 'https://mcp3d.com',
                 description: 'Collect land and build a blockchain city.',
                 icon: './images/dapps/megacryptopolis.png'
             },
+            {
+                name: 'Mirror',
+                url: 'https://mirror.xyz',
+                description: 'Through a decentralized, user-owned, crypto-based network, Mirror’s publishing platform revolutionizes the way we express, share and monetize our thoughts.',
+                icon: './images/dapps/mirror.png'
+             },
         ]   
     },
     {
