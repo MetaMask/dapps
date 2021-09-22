@@ -272,16 +272,10 @@ const categories =  [
                 description: 'Collect land and build a blockchain city.',
                 icon: './images/dapps/megacryptopolis.png'
             },
-            {
-                name: 'Mirror',
-                url: 'https://mirror.xyz',
-                description: 'Through a decentralized, user-owned, crypto-based network, Mirror’s publishing platform revolutionizes the way we express, share and monetize our thoughts.',
-                icon: './images/dapps/mirror.png'
-             },
         ]   
     },
     {
-        name: 'Get crypto',
+        name: 'Earn crypto',
         displayIos: false,
         icon: 'credit-card',
         color: '#1098FC',
@@ -304,6 +298,12 @@ const categories =  [
                 description: 'Earn ETH by creating content',
                 icon: './images/dapps/cent.co.png'
             },
+            {
+                name: 'Mirror',
+                url: 'https://mirror.xyz',
+                description: 'Mirror—a crypto native creative suite, with crowdfunding & publishing tools for creators. ',
+                icon: './images/dapps/mirror.png'
+             },
         ],
     },
     {
