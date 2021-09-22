@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import{trackEvent, ANALYTICS_EVENT_OPTS} from '../../util/analytics';
+import { trackEvent, ANALYTICS_EVENT_OPTS } from '../../util/analytics';
 import Tab from './Tab';
 
 import './index.css';
@@ -23,6 +23,9 @@ export default class Tabs extends Component {
   onTabSelected = (tab) => {
     this.setState({ activeTab: tab });
     trackEvent(ANALYTICS_EVENT_OPTS.CLICKS_HOMEPAGE_TAB, { 'Tab' : tab});
+    if (tab === 'Favorites') {
+      trackEvent(ANALYTICS_EVENT_OPTS.CLICKS_FAVORITES_TAB);
+    }
   }
 
   render() {
