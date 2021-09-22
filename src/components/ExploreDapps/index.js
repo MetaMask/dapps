@@ -4,7 +4,7 @@ import allDapps from '../../data/all-dapps';
 import './index.css';
 
 export default class ExploreDapps extends Component {
-    render(){
+    render() {
         return (
             <div className={'explore-dapps'}> 
                 { 
