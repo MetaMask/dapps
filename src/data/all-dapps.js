@@ -374,6 +374,12 @@ const categories =  [
                 description: 'Create and manage communities, companies, organizations',
                 icon: './images/dapps/aragon.org.png'
             },
+            {
+                name: 'Bidali',
+                url: 'https://commerce.bidali.com/dapp',
+                description: 'Buy from hundreds of top brands with crypto',
+                icon: './images/dapps/bidali.com.png'
+            }
         ],
     },
     {
