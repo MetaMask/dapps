@@ -374,6 +374,12 @@ const categories =  [
                 description: 'Create and manage communities, companies, organizations',
                 icon: './images/dapps/aragon.org.png'
             },
+         	{
+                name: 'EXNCE',
+                url: 'https://www.exnce.com/',
+                description: 'Are you looking for free crypto airdrops? Try exnce.com! EXNCE airdrop is your free access to new token projects.',
+                icon: './images/dapps/exnce.com.png'
+            },			
         ],
     },
     {
