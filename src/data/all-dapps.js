@@ -304,6 +304,12 @@ const categories =  [
                 description: 'Mirror—a crypto native creative suite, with crowdfunding & publishing tools for creators. ',
                 icon: './images/dapps/mirror.png'
              },
+            {
+                name: 'Shibex',
+                url: 'https://shibex.game',
+                description: 'An ecosystem Of arcade games based On play To burn model. ',
+                icon: './images/dapps/shibex.png'
+            },
         ],
     },
     {
