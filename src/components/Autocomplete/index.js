@@ -24,6 +24,10 @@ export default class Autocomplete extends Component {
         window.ethereum.send('metamask_showAutocomplete');
     };
 
+    onBlur = (event) => {
+        event.target.blur()
+    }
+
     handleSubmit = (event) => {
         event.preventDefault();
         this.trackEventSearchUsed();
@@ -46,6 +50,7 @@ export default class Autocomplete extends Component {
                     value={this.state.value}
                     onChange={this.handleChange} 
                     onFocus={this.onFocus}
+                    onBlur={this.onBlur}
                 />
             </form>
         );
