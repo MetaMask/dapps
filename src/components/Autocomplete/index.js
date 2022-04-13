@@ -20,7 +20,6 @@ export default class Autocomplete extends Component {
     }
 
     onFocus = (event) => {
-        event.preventDefault();
         window.ethereum.send('metamask_showAutocomplete');
     };
 
@@ -38,21 +37,11 @@ export default class Autocomplete extends Component {
 
    render(){
         return (
-            <form 
-                className={'autocomplete'}
-                onSubmit={this.handleSubmit}
-            >
-                <input
-                    autoCapitalize="none"
-                    type={'text'} 
-                    placeholder={'Search or Type URL'} 
-                    className={'autocomplete-input'}
-                    value={this.state.value}
-                    onChange={this.handleChange} 
-                    onFocus={this.onFocus}
-                    onBlur={this.onBlur}
-                />
-            </form>
+            <div className={'autocomplete'} onClick={this.onFocus}>
+                <div className={'autocomplete-input'}>
+                Search or Type URL
+                </div>    
+            </div>
         );
     }
 }
