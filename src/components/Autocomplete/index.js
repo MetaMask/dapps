@@ -20,12 +20,11 @@ export default class Autocomplete extends Component {
     }
 
     onFocus = (event) => {
+        event.preventDefault();
         window.ethereum.send('metamask_showAutocomplete');
-    };
-
-    onBlur = (event) => {
+        // needs to be blurred or else it will still be focused when the metamask mobile modal closes triggering an infinite loop
         event.target.blur()
-    }
+    };
 
     handleSubmit = (event) => {
         event.preventDefault();
@@ -37,11 +36,20 @@ export default class Autocomplete extends Component {
 
    render(){
         return (
-            <div className={'autocomplete'} onClick={this.onFocus}>
-                <div className={'autocomplete-input'}>
-                Search or Type URL
-                </div>    
-            </div>
+            <form 
+                className={'autocomplete'}
+                onSubmit={this.handleSubmit}
+            >
+                <input
+                    autoCapitalize="none"
+                    type={'text'} 
+                    placeholder={'Search or Type URL'} 
+                    className={'autocomplete-input'}
+                    value={this.state.value}
+                    onChange={this.handleChange} 
+                    onFocus={this.onFocus}
+                />
+            </form>
         );
     }
 }

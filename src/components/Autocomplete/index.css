@@ -14,13 +14,9 @@
 }
 
 .autocomplete-input {
-    display: flex;
-    align-items: center;
     width: 100%;
     font-size: 16px;
     outline-width: 0;
     border: 0px;
     -webkit-appearance: none;
-    color: darkgray;
-    padding-left: 8px; 
 }
