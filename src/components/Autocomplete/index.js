@@ -22,6 +22,8 @@ export default class Autocomplete extends Component {
     onFocus = (event) => {
         event.preventDefault();
         window.ethereum.send('metamask_showAutocomplete');
+        // needs to be blurred or else it will still be focused when the metamask mobile modal closes triggering an infinite loop
+        event.target.blur()
     };
 
     handleSubmit = (event) => {
