@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const run = async () => {
       try {
-        await window.ethereum.send('metamask_onAppMounted');
+        await window.ethereum.send('metamask_injectHomepageScripts');
       } catch (e) {
         /**
          * To render the app in the desktop browser we need to set loading to false
@@ -29,6 +29,7 @@ function App() {
     })
 
     run()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   if (isLoading) return null
