@@ -16,7 +16,7 @@ function App() {
       } catch (e) {
         /**
          * To render the app in the desktop browser we need to set loading to false
-         * as it throws by not finding the metamask_onAppMounted event which is only
+         * as it throws by not finding the metamask_injectHomepageScripts event which is only
          * available in MM webview.
          *  */        
         setIsLoading(false);
