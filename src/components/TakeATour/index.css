@@ -1,18 +1,10 @@
-.dapp {
+.take-a-tour-wrapper {
+    position: relative;
     margin-left: 8px;
     margin-right: 8px;
 }
 
-.take-a-tour-wrapper {
-    position: relative;
-    display: flex;
-    flex: 1;
-    margin-bottom: 30px;
-}
-
 .take-a-tour {
-    margin-left: 16px;
-    margin-right: 16px;
     display: flex;
     flex: 1;
     height: 48px;
@@ -67,14 +59,13 @@
     margin-top: 0px;
 }
 
-.take-a-tour-close {    
+.take-a-tour-close {
     width: 16px;
     height: 16px;
     padding: 5px;
     position: absolute;
-    right: 0px;
-    margin-right: 22px;
-    margin-top: 10px;
+    top: 5px;
+    right: 0;
     text-align: center;
     background-color: transparent;
     display: block;
