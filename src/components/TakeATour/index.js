@@ -19,7 +19,7 @@ export default class TakeATour extends Component {
     }
 
     render(){
-        if(this.state.hideTutorialBanner) return null;
+        if (this.state.hideTutorialBanner) return null;
         
         return (
             <div className={'take-a-tour-wrapper'}>

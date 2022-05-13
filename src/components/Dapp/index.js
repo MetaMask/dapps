@@ -28,11 +28,10 @@ export default class Dapp extends Component {
     render(){
         const { size, closable, data: { name, description, url, icon }} = this.props;
         return (
-            <a
+            <div
                 className={'dapp'}
-                href={url}
-                onClick={this.trackEventOpenListedDapp}
             >
+                <a href={url} className='dapp-container' onClick={this.trackEventOpenListedDapp}>
                 <img 
                     src={icon} 
                     className={`dapp-logo ${size === 'small' ? 'dapp-logo-small':''}`}
@@ -43,6 +42,7 @@ export default class Dapp extends Component {
                     { description ? this.renderDescription(description) : null}
                     <span className={'dapp-url'} >{url}</span>
                 </div>
+                </a>
                 { closable && (
                         <button 
                             className={'dapp-close'}
@@ -52,7 +52,7 @@ export default class Dapp extends Component {
                         </button>
                     )
                 }
-            </a>
+            </div>
             );
     }
 }
