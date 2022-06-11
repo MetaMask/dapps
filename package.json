@@ -1,6 +1,5 @@
 {
   "name": "@metamask/dapps",
-  "license": "ISC",
   "version": "0.0.0",
   "private": true,
   "resolutions": {
