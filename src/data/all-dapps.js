@@ -272,6 +272,12 @@ const categories =  [
                 description: 'Collect land and build a blockchain city.',
                 icon: './images/dapps/megacryptopolis.png'
             },
+            {
+                name: 'Kloov',
+                url: 'https://kloov.com',
+                description: 'Play unique NFT pieces created by music artists you love.',
+                icon: './images/dapps/kloov.jpg'
+            }
         ]   
     },
     {
