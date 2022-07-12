@@ -45,6 +45,30 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### Release
+
+The project follows the same release process as the other projects in the MetaMask organization. 
+
+1. Choose a release version.
+
+   - The release version should be chosen according to SemVer. Analyze the changes to see whether they include any breaking changes, new features, or deprecations, then choose the appropriate SemVer version. See [the SemVer specification](https://semver.org/) for more information.
+
+2. If this release is backporting changes onto a previous release, then ensure there is a major version branch for that version (e.g. `1.x` for a `v1` backport release).
+
+   - The major version branch should be set to the most recent release with that major version. For example, when backporting a `v1.0.2` release, you'd want to ensure there was a `1.x` branch that was set to the `v1.0.1` tag.
+
+4. Create a release PR branch using the following syntax `release/x.x.x`.
+
+4. Run `yarn auto-changelog` on the release branch and check that the changelog is correctly formatted.
+
+   - Generally any changes that don't affect consumers of the package (e.g. lockfile changes or development environment changes) are omitted. Exceptions may be made for changes that might be of interest despite not having an effect upon the published package (e.g. major test improvements, security improvements, improved documentation, etc.).
+   - Try to explain each change in terms that users of the package would understand (e.g. avoid referencing internal variables/concepts).
+   - Consolidate related changes into one change entry if it makes it easier to explain.
+
+5. Dev review and QA the release.
+
+   - If changes are made to the base branch, the release branch will need to be updated with these changes and review/QA will need to restart again. As such, it's probably best to avoid merging other PRs into the base branch while review is underway.
+
 ### Deployments
 
 - Make sure you have the netlify client configured with your credentials and you have access to the project.
