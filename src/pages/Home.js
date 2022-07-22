@@ -30,8 +30,6 @@ const isMobile = {
 };
 
 export default class Home extends Component {
-
-
     componentDidMount() {
         trackEvent(ANALYTICS_EVENT_OPTS.IMPRESSION);
     }
