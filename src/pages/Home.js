@@ -7,8 +7,6 @@ import ExploreDapps from '../components/ExploreDapps/';
 import Favorites from '../components/Favorites/';
 import TakeATour from '../components/TakeATour/';
 import{trackEvent, ANALYTICS_EVENT_OPTS} from '../util/analytics';
-import { isIOS } from 'react-device-detect';
-
 
 const isMobile = {
     Android: function () {
@@ -45,7 +43,7 @@ export default class Home extends Component {
                 <Autocomplete />
                 {/* <FeaturedDappsCarousel /> */}
                 <Tabs>
-                <div label="Explore sites">
+                    <div label="Explore sites">
                         <ExploreDapps />
                     </div>
                     <div label="Favorites">
