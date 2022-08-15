@@ -415,4 +415,7 @@ const categories =  [
     }
 ];
 
-export default categories;
+// hide any of the above on iOS when displayIos is false
+const filtered = categories.filter(({ displayIos = true }) => !(isIOS && !displayIos));
+
+export default filtered;
