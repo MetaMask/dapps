@@ -1,58 +1,57 @@
-import React, { Component } from 'react'
+import React from 'react'
 import closeIcon from '../../images/close-icon.svg';
-import{trackEvent, ANALYTICS_EVENT_OPTS} from '../../util/analytics';
+import { trackEvent, ANALYTICS_EVENT_OPTS } from '../../util/analytics';
 import './index.css';
 
-export default class Dapp extends Component {
+const Dapp = (props) => {
+    const { size, closable, data: { name, description, url, icon } } = props;
 
-    trackEventOpenListedDapp = (e) => {
+    const trackEventOpenListedDapp = (e) => {
         e.preventDefault();
-        trackEvent(ANALYTICS_EVENT_OPTS.OPEN_LISTED_DAPP, { 
-            'dapp_name' : this.props.data.name,
-            'dapp_url': this.props.data.url,
-            'position': this.props.position + 1
+        trackEvent(ANALYTICS_EVENT_OPTS.OPEN_LISTED_DAPP, {
+            'dapp_name': props.data.name,
+            'dapp_url': props.data.url,
+            'position': props.position + 1
         });
-        window.location.href = this.props.data.url;
+        window.location.href = props.data.url;
     }
 
-    renderDescription = (description) => {
+    const renderDescription = (description) => {
         return description && (<p className={'dapp-desc'} >{description}</p>)
     }
 
-    onClose = (e) => {
+    const onClose = (e) => {
         e.preventDefault();
-        this.props.onClose(this.props.data.url);
+        props.onClose(props.data.url);
     }
-    
 
-    render(){
-        const { size, closable, data: { name, description, url, icon }} = this.props;
-        return (
-            <div
-                className={'dapp'}
-            >
-                <a href={url} className='dapp-container' onClick={this.trackEventOpenListedDapp}>
-                <img 
-                    src={icon} 
-                    className={`dapp-logo ${size === 'small' ? 'dapp-logo-small':''}`}
+    return (
+        <div
+            className={'dapp'}
+        >
+            <a href={url} className='dapp-container' onClick={trackEventOpenListedDapp}>
+                <img
+                    src={icon}
+                    className={`dapp-logo ${size === 'small' ? 'dapp-logo-small' : ''}`}
                     alt={`${name} logo`}
                 />
                 <div className='dapp-content'>
-                    <p className={`dapp-name ${size === 'small' ? 'dapp-name-small':''}`} >{name}</p>
-                    { description ? this.renderDescription(description) : null}
+                    <p className={`dapp-name ${size === 'small' ? 'dapp-name-small' : ''}`} >{name}</p>
+                    {description ? renderDescription(description) : null}
                     <span className={'dapp-url'} >{url}</span>
                 </div>
-                </a>
-                { closable && (
-                        <button 
-                            className={'dapp-close'}
-                            onClick={this.onClose}
-                        >
-                            <img src={closeIcon} alt={'close button'} />
-                        </button>
-                    )
-                }
-            </div>
-            );
-    }
+            </a>
+            {closable && (
+                <button
+                    className={'dapp-close'}
+                    onClick={onClose}
+                >
+                    <img src={closeIcon} alt={'close button'} />
+                </button>
+            )
+            }
+        </div>
+    );
 }
+
+export default Dapp;
