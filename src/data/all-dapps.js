@@ -11,6 +11,12 @@ const categories =  [
         color: '#5cd879',
         dapps: [
             {
+                name: 'https://ultron.foundation/',
+                url: 'Ultron Foundation',
+                description: 'Ultron is a fast-growing smart contract platform for dApps and digital assets. Built on a powerful global network, Ultron enables high-volume, low-fee transactions at scale.',
+                icon: './images/dapps/ultron.png'
+            },
+            {
                 name: 'Compound',
                 url: 'https://app.compound.finance/',
                 description: 'Earn interest on your ETH',

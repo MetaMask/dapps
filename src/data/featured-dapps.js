@@ -1,5 +1,12 @@
 export default [
 	{
+		name: 'https://ultron.foundation/',
+		url: 'Ultron Foundation',
+		shortName: 'Ultron',
+		description: 'Ultron is a fast-growing smart contract platform for dApps and digital assets. Built on a powerful global network, Ultron enables high-volume, low-fee transactions at scale.',
+		icon: './images/dapps/ultron.png'
+	},
+	{
 		url: 'https://uniswap.exchange/',
 		name: 'Uniswap Exchange',
 		shortName: 'Uniswap',
