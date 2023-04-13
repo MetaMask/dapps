@@ -11,8 +11,8 @@ const categories =  [
         color: '#5cd879',
         dapps: [
             {
-                name: 'https://ultron.foundation/',
-                url: 'Ultron Foundation',
+                name: 'Ultron Foundation',
+                url: 'https://ultron.foundation/',
                 description: 'Ultron is a fast-growing smart contract platform for dApps and digital assets. Built on a powerful global network, Ultron enables high-volume, low-fee transactions at scale.',
                 icon: './images/dapps/ultron.png'
             },
