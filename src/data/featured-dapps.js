@@ -1,4 +1,11 @@
 export default [
+	{
+		url: 'https://ulxscan.com/',
+		name: 'Ulxscan',
+		shortName: 'Ulxscan',
+		description: 'Ultron Explorer allows you to explore and search the Ultron blockchain for transactions, addresses and blocks',
+		icon: './images/dapps/ultron.png'
+	},
 	{	url: 'https://ultronswap.com/',
 		name: 'Ultronswap',
 		shortName: 'Ultronswap',

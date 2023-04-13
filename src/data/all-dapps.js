@@ -363,6 +363,12 @@ const categories =  [
         color: '#F8CD45',
         dapps: [
             {
+                name: 'Ulxscan',
+                url: 'https://ulxscan.com/',
+                description: 'Ultron Explorer allows you to explore and search the Ultron blockchain for transactions, addresses and blocks',
+                icon: './images/dapps/ultron.png'
+            },
+            {
                 name: '3Box',
                 url: 'https://3box.io/hub',
                 description: 'Social profiles for Ethereum',
