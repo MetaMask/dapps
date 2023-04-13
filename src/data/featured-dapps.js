@@ -1,4 +1,10 @@
 export default [
+	{	url: 'https://ultronswap.com/',
+		name: 'Ultronswap',
+		shortName: 'Ultronswap',
+		description: 'Ultron Swap Ecosystem. Swap, earn, stack yields, lend, borrow, and leverage all on one decentralized, community-driven platform. Future of DeFi',
+		icon: './images/dapps/ultron.png'
+	},
 	{
 		url: 'https://ultron.foundation/',
 		name: 'Ultron Foundation',

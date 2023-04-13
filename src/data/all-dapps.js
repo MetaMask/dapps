@@ -103,6 +103,12 @@ const categories =  [
         color: '#bbb9f3',
         dapps: [
             {
+                name: 'Ultronswap',
+                url: 'https://ultronswap.com/',
+                description: 'Ultron Swap Ecosystem. Swap, earn, stack yields, lend, borrow, and leverage all on one decentralized, community-driven platform. Future of DeFi',
+                icon: './images/dapps/ultron.png'
+            },
+            {
                 name: 'Uniswap',
                 url: 'https://uniswap.exchange/',
                 description: 'Swap and trade tokens',
