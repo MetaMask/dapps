@@ -4,7 +4,7 @@ set -e
 set -u
 set -o pipefail
 
-readonly URL='https://github.com/MetaMask/metamask-mobile'
+readonly URL='https://github.com/MetaMask/dapps'
 
 git fetch --tags
 
