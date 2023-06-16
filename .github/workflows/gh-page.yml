@@ -1,7 +1,6 @@
 name: Build GH Pages
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - staging
@@ -29,6 +28,7 @@ jobs:
           yarn build
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: peaceiris/actions-gh-pages@de7ea6f8efb354206b205ef54722213d99067935
         with:
-          folder: build
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
