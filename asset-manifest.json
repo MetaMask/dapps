@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "./static/css/main.854f8e5d.chunk.css",
-    "main.js": "./static/js/main.57c916e1.chunk.js",
-    "main.js.map": "./static/js/main.57c916e1.chunk.js.map",
-    "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
-    "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
-    "static/js/2.4bd12f97.chunk.js": "./static/js/2.4bd12f97.chunk.js",
-    "static/js/2.4bd12f97.chunk.js.map": "./static/js/2.4bd12f97.chunk.js.map",
-    "index.html": "./index.html",
-    "precache-manifest.a0d10558fb43599f1a5d4202fad7ad7e.js": "./precache-manifest.a0d10558fb43599f1a5d4202fad7ad7e.js",
-    "service-worker.js": "./service-worker.js",
-    "static/css/main.854f8e5d.chunk.css.map": "./static/css/main.854f8e5d.chunk.css.map",
-    "static/media/back-icon.svg": "./static/media/back-icon.79bb2c6d.svg",
-    "static/media/bg-img.svg": "./static/media/bg-img.a24f336a.svg",
-    "static/media/close-icon.svg": "./static/media/close-icon.3fcc47fb.svg",
-    "static/media/logo-wordmark.svg": "./static/media/logo-wordmark.d74d0984.svg",
-    "static/media/logo.svg": "./static/media/logo.d0e2d96d.svg"
+    "main.css": "/dapps/static/css/main.854f8e5d.chunk.css",
+    "main.js": "/dapps/static/js/main.dd8acd42.chunk.js",
+    "main.js.map": "/dapps/static/js/main.dd8acd42.chunk.js.map",
+    "runtime~main.js": "/dapps/static/js/runtime~main.16fcfcad.js",
+    "runtime~main.js.map": "/dapps/static/js/runtime~main.16fcfcad.js.map",
+    "static/js/2.4bd12f97.chunk.js": "/dapps/static/js/2.4bd12f97.chunk.js",
+    "static/js/2.4bd12f97.chunk.js.map": "/dapps/static/js/2.4bd12f97.chunk.js.map",
+    "index.html": "/dapps/index.html",
+    "precache-manifest.5cf97b34b75c2de71f59e637bad13f0b.js": "/dapps/precache-manifest.5cf97b34b75c2de71f59e637bad13f0b.js",
+    "service-worker.js": "/dapps/service-worker.js",
+    "static/css/main.854f8e5d.chunk.css.map": "/dapps/static/css/main.854f8e5d.chunk.css.map",
+    "static/media/back-icon.svg": "/dapps/static/media/back-icon.79bb2c6d.svg",
+    "static/media/bg-img.svg": "/dapps/static/media/bg-img.a24f336a.svg",
+    "static/media/close-icon.svg": "/dapps/static/media/close-icon.3fcc47fb.svg",
+    "static/media/logo-wordmark.svg": "/dapps/static/media/logo-wordmark.d74d0984.svg",
+    "static/media/logo.svg": "/dapps/static/media/logo.d0e2d96d.svg"
   }
 }
