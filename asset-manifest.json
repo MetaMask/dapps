@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.854f8e5d.chunk.css",
-    "main.js": "/static/js/main.cec05338.chunk.js",
-    "main.js.map": "/static/js/main.cec05338.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.4bd12f97.chunk.js": "/static/js/2.4bd12f97.chunk.js",
-    "static/js/2.4bd12f97.chunk.js.map": "/static/js/2.4bd12f97.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.44ac8f94222ea82649f628767324fe5a.js": "/precache-manifest.44ac8f94222ea82649f628767324fe5a.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.854f8e5d.chunk.css.map": "/static/css/main.854f8e5d.chunk.css.map",
-    "static/media/back-icon.svg": "/static/media/back-icon.79bb2c6d.svg",
-    "static/media/bg-img.svg": "/static/media/bg-img.a24f336a.svg",
-    "static/media/close-icon.svg": "/static/media/close-icon.3fcc47fb.svg",
-    "static/media/logo-wordmark.svg": "/static/media/logo-wordmark.d74d0984.svg",
-    "static/media/logo.svg": "/static/media/logo.d0e2d96d.svg"
+    "main.css": "./static/css/main.854f8e5d.chunk.css",
+    "main.js": "./static/js/main.57c916e1.chunk.js",
+    "main.js.map": "./static/js/main.57c916e1.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
+    "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
+    "static/js/2.4bd12f97.chunk.js": "./static/js/2.4bd12f97.chunk.js",
+    "static/js/2.4bd12f97.chunk.js.map": "./static/js/2.4bd12f97.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.a0d10558fb43599f1a5d4202fad7ad7e.js": "./precache-manifest.a0d10558fb43599f1a5d4202fad7ad7e.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.854f8e5d.chunk.css.map": "./static/css/main.854f8e5d.chunk.css.map",
+    "static/media/back-icon.svg": "./static/media/back-icon.79bb2c6d.svg",
+    "static/media/bg-img.svg": "./static/media/bg-img.a24f336a.svg",
+    "static/media/close-icon.svg": "./static/media/close-icon.3fcc47fb.svg",
+    "static/media/logo-wordmark.svg": "./static/media/logo-wordmark.d74d0984.svg",
+    "static/media/logo.svg": "./static/media/logo.d0e2d96d.svg"
   }
 }
