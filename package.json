@@ -28,6 +28,7 @@
     "eject": "react-scripts eject",
     "update-changelog": "./scripts/auto-changelog.sh"
   },
+  "homepage": ".",
   "eslintConfig": {
     "extends": "react-app"
   },

@@ -34,8 +34,11 @@ function App() {
 
   if (isLoading) return null
 
+  const currentPath = window.location.pathname;
+  const basename = currentPath.startsWith('/dapps') ? '/dapps' : undefined;
+
   return (
-      <Router>
+      <Router basename={basename}>
         <ScrollToTop>
           <div className="App">
             <Route exact path="/" component={Home} />
