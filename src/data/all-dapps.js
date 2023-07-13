@@ -287,10 +287,10 @@ const categories =  [
                 icon: './images/dapps/gitcoin.co.png'
             },
             {
-                name: 'Local Ethereum',
-                url: 'https://localethereum.com/',
-                description: 'Get ETH peer-to-peer in over 130 countries',
-                icon: './images/dapps/localethereum.com.png'
+                name: 'LocalCryptos',
+                url: 'https://localcryptos.com/',
+                description: 'A private non-custodial P2P marketplace to exchange cryptos for local currency',
+                icon: './images/dapps/localcryptos.com.png'
             },
             {
                 name: 'Cent',
