@@ -165,6 +165,12 @@ const categories =  [
         color: '#F29D62',
         dapps: [
             {
+                name: 'Refinable',
+                url: 'https://refinable.com/',
+                description: 'A decentralized multi-chain NFT marketplace for users to trade items from across the metaverse.',
+                icon: './images/dapps/refinable.png'
+            },
+            {
                 name: 'miime',
                 url: 'https://miime.io/',
                 description: 'miime is an NFT marketplace catering to blockchain gamers in Japan and across the world',
