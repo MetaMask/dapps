@@ -24,7 +24,7 @@ const categories =  [
             },
             {
                 name: 'PoolTogether',
-                url: 'https://app.pooltogether.us/',
+                url: 'https://app.pooltogether.com/',
                 description: 'A prize-linked savings account. By saving money you have a chance to win prizes',
                 icon: './images/dapps/pooltogether.us.png'
             },
