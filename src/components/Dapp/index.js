@@ -34,6 +34,7 @@ export default class Dapp extends Component {
                 <a href={url} className='dapp-container' onClick={this.trackEventOpenListedDapp}>
                 <img 
                     src={icon} 
+                    crossorigin="anonymous" 
                     className={`dapp-logo ${size === 'small' ? 'dapp-logo-small':''}`}
                     alt={`${name} logo`}
                 />
