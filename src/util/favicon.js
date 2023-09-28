@@ -1,4 +1,5 @@
 import { DOMParser } from "@xmldom/xmldom";
+import isUrl from "is-url";
 
 /**
  * Parse the HTML source into a DOM document
@@ -7,7 +8,7 @@ import { DOMParser } from "@xmldom/xmldom";
  * @returns {Document | undefined} the DOM document
  */
 const parseHtmlSource = (htmlSource) => {
-  if (htmlSource) {
+  if (htmlSource && htmlSource.length > 0) {
     // use a return statement for the error handler to avoid the console warning
     // as any error will result in fallback favicon
     return new DOMParser().parseFromString(htmlSource, "text/html");
@@ -49,7 +50,7 @@ const getFaviconUrlFromLinks = (links, origin) => {
 const originToUrl = (origin) => {
   if (origin) {
     try {
-      const originWithProtocol = origin.startsWith("http")
+      const originWithProtocol = isUrl(origin)
         ? origin
         : `https://${origin}`;
       return new URL(originWithProtocol).toString();
@@ -64,7 +65,7 @@ const originToUrl = (origin) => {
  * @returns {Promise<string> | undefined} - String corresponding to favicon url or empty string if none found
  */
 export const getFaviconURLFromHtml = async (origin) => {
-  if (!origin) {
+  if (!origin || origin === 'null') {
     return;
   }
   try {
