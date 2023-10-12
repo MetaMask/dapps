@@ -25,7 +25,7 @@ export default class FavoriteItem extends Component {
         this.setState({
           data: {
             ...this.state.data,
-            icon,
+            icon: icon.toString(),
           },
         });
       }

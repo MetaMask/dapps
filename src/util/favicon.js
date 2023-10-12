@@ -9,8 +9,6 @@ import isUrl from "is-url";
  */
 const parseHtmlSource = (htmlSource) => {
   if (htmlSource && htmlSource.length > 0) {
-    // use a return statement for the error handler to avoid the console warning
-    // as any error will result in fallback favicon
     return new DOMParser().parseFromString(htmlSource, "text/html");
   }
 };
@@ -20,10 +18,10 @@ const parseHtmlSource = (htmlSource) => {
  *
  * @param {HTMLCollectionOf<Element> | undefined} links the HTML links collection
  * @param {string} origin the origin URL to be used to build the favicon url
- * @returns {string} the first found favicon URL or empty object if none found
+ * @returns {URL | undefined} the first found favicon URL or empty object if none found
  */
 const getFaviconUrlFromLinks = (links, origin) => {
-  let faviconURL = "";
+  let faviconURL;
 
   if (links && links.length > 0 && origin) {
     for (let i in Array.from(links)) {
@@ -32,7 +30,7 @@ const getFaviconUrlFromLinks = (links, origin) => {
       if (rel && rel.split(" ").includes("icon")) {
         const href = link.getAttribute("href");
         if (href) {
-          faviconURL = new URL(href, origin).toString();
+          faviconURL = new URL(href, origin);
           break; //stop loop at first favicon found, same behaviour as browser extension
         }
       }
@@ -45,7 +43,7 @@ const getFaviconUrlFromLinks = (links, origin) => {
  * Sanitize origin url
  * 
  * @param {string} origin 
- * @returns {string | undefined}
+ * @returns {URL | undefined}
  */
 const originToUrl = (origin) => {
   if (origin) {
@@ -53,7 +51,7 @@ const originToUrl = (origin) => {
       const originWithProtocol = isUrl(origin)
         ? origin
         : `https://${origin}`;
-      return new URL(originWithProtocol).toString();
+      return new URL(originWithProtocol);
     } catch (e) {}
   }
 };
@@ -62,7 +60,7 @@ const originToUrl = (origin) => {
  * Returns URL for the favicon of the given url
  *
  * @param {string} origin - String corresponding to website url or domain
- * @returns {Promise<string> | undefined} - String corresponding to favicon url or empty string if none found
+ * @returns {Promise<URL | undefined>} - String corresponding to favicon url or empty string if none found
  */
 export const getFaviconURLFromHtml = async (origin) => {
   if (!origin || origin === 'null') {
