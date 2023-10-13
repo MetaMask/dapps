@@ -24,17 +24,17 @@ const getFaviconUrlFromLinks = (links, origin) => {
   let faviconURL;
 
   if (links && links.length > 0 && origin) {
-    for (let i in Array.from(links)) {
-      const link = links[i];
+    Array.from(links).every((link) => {
       const rel = link.getAttribute("rel");
       if (rel && rel.split(" ").includes("icon")) {
         const href = link.getAttribute("href");
         if (href) {
           faviconURL = new URL(href, origin);
-          break; //stop loop at first favicon found, same behaviour as browser extension
+          return false; //stop loop at first favicon found, same behaviour as browser extension
         }
       }
-    }
+      return true;
+    });
   }
   return faviconURL;
 };
