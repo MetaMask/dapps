@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { getHost } from '../../util/browser';
-import Dapp from '../Dapp';
+import FavoriteItem from './FavoriteItem';
 import './index.css';
 
 export default class Favorites extends Component {
@@ -31,10 +31,10 @@ export default class Favorites extends Component {
             <div className={'favorites'}>
                 {
                     this.state.favorites.map((dapp, i) => (
-                        <Dapp
+                        <FavoriteItem
                             data={{
                                 ...dapp,
-                                icon: `https://api.faviconkit.com/${getHost(dapp.url)}/64`,
+                                icon: getHost(dapp.url),
                                 description: null
                             }}
                             key={`fav-${dapp.url}`}
