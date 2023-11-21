@@ -1,0 +1,38 @@
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        description: Environment name
+        type: string
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ inputs.environment }}
+    steps:
+        # v4.1.1
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
+      - name: Use Node.js
+        # v4.0.0
+        uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'yarn'
+      - name: configure AWS credentials
+        # v4.0.1
+        uses: aws-actions/configure-aws-credentials@010d0da01d0b5a38af31e9c3470dbfdabdecca3a
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          role-session-name: ghactionssession
+          aws-region: ${{ vars.AWS_REGION }}
+      - name: download build artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build
+          path: ./build/
+      - name: Deploy website
+        run: |
+          aws s3 cp ./build/ s3://${{ vars.AWS_BUCKET_NAME }}/ --recursive --acl private
+          aws cloudfront create-invalidation --distribution-id ${{ vars.AWS_CF_DISTRIBUTION_ID }} --paths "/"
