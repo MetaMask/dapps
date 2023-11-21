@@ -2,6 +2,8 @@ name: Main
 
 on:
   pull_request:
+  push:
+    branches: [master]
 
 jobs:
   check-workflows:
@@ -26,8 +28,7 @@ jobs:
     name: UAT Release
     uses: ./.github/workflows/release.yml
     needs: [ build-test ]
-    #if: github.ref == 'refs/heads/main'
-    if: always()
+    if: github.ref == 'refs/heads/master'
     permissions:
       contents: read
       id-token: write
@@ -37,8 +38,8 @@ jobs:
   release-prd:
     name: PRD Release
     uses: ./.github/workflows/release.yml
-    needs: [ build-test ]
-    #if: github.ref == 'refs/heads/main'
+    needs: [ build-test, release-uat ]
+    if: github.ref == 'refs/heads/master'
     permissions:
       contents: read
       id-token: write
