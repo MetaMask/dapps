@@ -5,12 +5,12 @@
 ### Managing featured dapps
 
 You need to submit a pull request to this repo with your changes to the file:
-https://github.com/MetaMask/dapps/blob/master/src/data/featured-dapps.js
+https://github.com/MetaMask/dapps/blob/main/src/data/featured-dapps.js
 
 ### Managing dapps inside categories
 
 You need to submit a pull request to this repo with your changes to the file:
-https://github.com/MetaMask/dapps/blob/master/src/data/all-dapps.js
+https://github.com/MetaMask/dapps/blob/main/src/data/all-dapps.js
 
 ### Dapp icons
 
