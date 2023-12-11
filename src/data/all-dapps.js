@@ -140,8 +140,8 @@ const categories =  [
             },
             {
                 name: 'AirSwap',
-                url: 'https://instant.airswap.io/',
-                description: 'Trade Tokens Easily, Securely, & Without Trading Fees',
+                url: 'https://airswap.io/',
+                description: 'Instant Token Swaps and OTC',
                 icon: './images/dapps/instant.airswap.io.png'
             },
             {
