@@ -60,7 +60,7 @@ jobs:
         with:
           node-version-file: '.nvmrc'
           cache: 'yarn'
-      - run: yarn
+      - run: yarn --immutable
       - run: yarn test
       - name: Require clean working directory
         shell: bash
