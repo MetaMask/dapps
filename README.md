@@ -71,12 +71,45 @@ The project follows the same release process as the other projects in the MetaMa
 
 ### Deployments
 
-- Make sure you have the netlify client configured with your credentials and you have access to the project.
+#### Repository Release Process Documentation
 
-#### Staging
+This section provides a detailed explanation of the release process for this repository, which is managed through a GitHub Action workflow.
 
-- `npm run deploy`
+##### Workflow Overview
 
-#### Production
+The GitHub Action workflow is named `master` and it is triggered on every pull request and push to the `master` branch. The workflow consists of four jobs:
 
-- `npm run deploy:prod`
+1. `check-workflows`
+2. `build-test`
+3. `release-uat`
+4. `release-prd`
+
+###### 1. Check Workflows
+
+This job performs the following steps:
+
+- Checks out the repository using the `actions/checkout` action.
+- Downloads `actionlint`, a tool for linting GitHub Actions workflow files.
+- Checks the workflow files using `actionlint`.
+
+###### 2. Build and Test
+
+This job uses the workflow defined in `./.github/workflows/build-test.yml`. It is responsible for building the project and running tests to ensure the code is working as expected.
+
+###### 3. UAT Release
+
+This job uses the workflow defined in `./.github/workflows/release.yml`. It is dependent on the `build-test` job and only runs if the `build-test` job is successful and the current branch is `master`. This job is responsible for releasing the project to the User Acceptance Testing (UAT) environment.
+
+###### 4. PRD Release
+
+This job is similar to the `release-uat` job but it releases the project to the Production (PRD) environment. It also depends on the `build-test` job and only runs if the `build-test` job is successful and the current branch is `master`.
+
+##### Release Process
+
+The release process is initiated when a pull request is merged into the `master` branch or when a direct push is made to the `master` branch. Here are the steps that are followed:
+
+1. The `check-workflows` job is run to ensure the workflow files are valid.
+2. If the workflow files are valid, the `build-test` job is run to build the project and run tests.
+3. If the `build-test` job is successful, the `release-uat` job is run to release the project to the UAT environment.
+4. If the `release-uat` job is successful, the `release-prd` job is run to release the project to the PRD environment, ideally `prd` GitHub environment has configured environment deployment policy (approvals).
+
