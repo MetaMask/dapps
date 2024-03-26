@@ -11,6 +11,12 @@ const categories =  [
         color: '#5cd879',
         dapps: [
             {
+                name: 'Ultron Foundation',
+                url: 'https://ultron.foundation/',
+                description: 'Ultron is a fast-growing smart contract platform for dApps and digital assets. Built on a powerful global network, Ultron enables high-volume, low-fee transactions at scale.',
+                icon: './images/dapps/ultron.png'
+            },
+            {
                 name: 'Compound',
                 url: 'https://app.compound.finance/',
                 description: 'Earn interest on your ETH',
@@ -96,6 +102,12 @@ const categories =  [
         icon: 'exchange-alt',
         color: '#bbb9f3',
         dapps: [
+            {
+                name: 'Ultronswap',
+                url: 'https://ultronswap.com/',
+                description: 'Ultron Swap Ecosystem. Swap, earn, stack yields, lend, borrow, and leverage all on one decentralized, community-driven platform. Future of DeFi',
+                icon: './images/dapps/ultron.png'
+            },
             {
                 name: 'Uniswap',
                 url: 'https://uniswap.exchange/',
@@ -350,6 +362,12 @@ const categories =  [
         icon: 'comment-alt',
         color: '#F8CD45',
         dapps: [
+            {
+                name: 'Ulxscan',
+                url: 'https://ulxscan.com/',
+                description: 'Ultron Explorer allows you to explore and search the Ultron blockchain for transactions, addresses and blocks',
+                icon: './images/dapps/ultron.png'
+            },
             {
                 name: '3Box',
                 url: 'https://3box.io/hub',
