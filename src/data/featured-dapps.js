@@ -41,5 +41,12 @@ export default [
 		shortName: 'Aragon',
 		description: 'Aragon lets you freely organize and collaborate without borders or intermediaries.',
 		icon: './images/dapps/aragon.org.png'
+	},
+	{
+		url: 'https://beta.zerion.io/',
+		name: 'Zerion',
+		shortName: 'Zerion',
+		description: 'Zerion is your gateway to DeFi. Watch the portfolio, trade, lend and borrow assets in a single place!',
+		icon: './images/dapps/zerion.png'
 	}
 ];
