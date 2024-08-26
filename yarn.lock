@@ -9085,7 +9085,7 @@ react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-motion@^0.5.0:
+react-motion@^0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/react-motion/-/react-motion-0.5.2.tgz#0dd3a69e411316567927917c6626551ba0607316"
   integrity sha512-9q3YAvHoUiWlP3cK0v+w1N5Z23HXMj4IF4YuvjvWegWqNPfLXsOBE/V7UvQGpXxHFKRQQcNcVQE31g9SB/6qgQ==
@@ -9107,13 +9107,13 @@ react-router-dom@^5.0.1:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-router-transition@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/react-router-transition/-/react-router-transition-1.3.0.tgz#f37ff181f7cd5fe33f906c49a590dffaeec9ec18"
-  integrity sha512-fAtLlb7rH7qlFRWozKBk1NLIUpDft2jpZavTWPq3Qob7aSvJCKEbRgiyBkYogg+MYfsbhGeFBd++81DRR/X/4Q==
+react-router-transition@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-router-transition/-/react-router-transition-2.1.0.tgz#07011711d25972400211f706a36ea96985d5ab5c"
+  integrity sha512-vL0JczAcs4s5MjWm1DSitoap9KRqE1m7YZopIXiT4x6NVrqXs9CGH1uLBBSZ3rJFwGBQRgsfY7NFe2ygDfGQ2Q==
   dependencies:
-    prop-types "^15.5.10"
-    react-motion "^0.5.0"
+    prop-types "^15.7.2"
+    react-motion "^0.5.2"
 
 react-router@5.0.1:
   version "5.0.1"
