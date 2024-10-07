@@ -92,7 +92,7 @@ const categories =  [
                 name: 'ShapeShift',
                 url: 'https://app.shapeshift.com/',
                 description: 'Track, trade, buy, borrow, and earn. Community owned. Private. Noncustodial. Multichain.',
-                icon: './images/dapps/shapeshift.png'
+                icon: './images/dapps/shapeshift.svg'
             },
         ],
     },
