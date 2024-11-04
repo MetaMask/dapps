@@ -29,7 +29,7 @@ export default class Autocomplete extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
         this.trackEventSearchUsed();
-        const searchEngine = window.__mmSearchEngine || 'DuckDuckGo';
+        const searchEngine = window.__mmSearchEngine;
         const sanitizedInput = onUrlSubmit(this.state.value, searchEngine);
         window.location.href = sanitizedInput;
     }
