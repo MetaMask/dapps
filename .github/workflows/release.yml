@@ -1,0 +1,30 @@
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        description: Environment name
+        type: string
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ inputs.environment }}
+    steps:
+      - name: configure AWS credentials
+        # v4.0.1
+        uses: aws-actions/configure-aws-credentials@010d0da01d0b5a38af31e9c3470dbfdabdecca3a
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          role-session-name: ghactionssession
+          aws-region: ${{ vars.AWS_REGION }}
+      - name: download build artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build
+          path: ./build/
+      - name: Deploy website
+        run: |
+          aws s3 cp ./build/ s3://${{ vars.AWS_BUCKET_NAME }}/ --recursive --acl private
+          aws cloudfront create-invalidation --distribution-id ${{ vars.AWS_CF_DISTRIBUTION_ID }} --paths "/"
