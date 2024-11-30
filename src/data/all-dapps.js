@@ -170,7 +170,7 @@ const categories =  [
                 description: 'miime is an NFT marketplace catering to blockchain gamers in Japan and across the world',
                 icon: './images/dapps/miime.png'
             },
-              {
+            {
                 name: 'Mintable',
                 url: 'https://mintable.app',
                 description: 'Mintable is a next generation NFT marketplace, the easiest place to trade NFTs and create your own.',
@@ -254,7 +254,7 @@ const categories =  [
                 description: 'Use heroes in turn-based quests and battles.',
                 icon: './images/dapps/brave_frontier_heroes.png'
             },
-           {
+            {
                 name: 'Blockchain Cuties',
                 url: 'https://blockchaincuties.com/',
                 description: 'Cuties are cats, dogs, and bears that go on adventures.',
@@ -303,7 +303,7 @@ const categories =  [
                 url: 'https://mirror.xyz',
                 description: 'Mirror—a crypto native creative suite, with crowdfunding & publishing tools for creators. ',
                 icon: './images/dapps/mirror.png'
-             },
+            },
         ],
     },
     {
@@ -341,6 +341,12 @@ const categories =  [
                 url: 'https://mythx.io/',
                 description: 'Smart contract security service for Ethereum',
                 icon: './images/dapps/mythx.png'
+            },
+            {
+                name: 'Thirdweb',
+                url: 'https://thirdweb.com/',
+                description: 'Web3 SDKs for developers, No-code for NFT Artists.',
+                icon: './images/dapps/thirdweb.png'
             },
         ]   
     },
