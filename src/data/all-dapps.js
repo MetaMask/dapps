@@ -401,6 +401,12 @@ const categories =  [
                 icon: './images/dapps/coingecko.com.png'
             },
             {
+                name: 'Coinsamba',
+                url: 'https://coinsamba.com/pt/bestprice/ETH-USD',
+                description: 'Find the exchange with the best price based on book depth and fees.',
+                icon: './images/dapps/coinsamba.com.png'
+            },
+            {
                 name: 'DeCrypt',
                 url: 'https://decrypt.co/',
                 description: 'News about Ethereum, Bitcoin and Web3',
