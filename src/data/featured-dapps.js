@@ -7,6 +7,13 @@ export default [
 		icon: './images/dapps/uniswap.exchange.png'
 	},
 	{
+		url: 'https://phi.network',
+		name: 'PHI Network',
+		shortName: 'PHI',
+		description: 'Earn, Entertain, Engage & Exchange',
+		icon: './images/dapps/phi.network.png'
+	},
+	{
 		url: 'https://opensea.io/',
 		name: 'OpenSea',
 		shortName: 'OpenSea',
