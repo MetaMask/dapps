@@ -243,8 +243,8 @@ const categories =  [
                 icon: './images/dapps/my_crypto_heroes.jpg'
             },
             {
-                name: 'CryptoDozer Marketplace',
-                url: 'https://market.playdapp.io',
+                name: 'PlayDapp Marketplace',
+                url: 'https://playdapp.com',
                 description: 'From sales to purchases, marketplace is reliable and fast',
                 icon: './images/dapps/cryptodozer.io.png'
             },
