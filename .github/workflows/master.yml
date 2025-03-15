@@ -1,0 +1,47 @@
+name: Main
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+jobs:
+  check-workflows:
+    name: Check workflows
+    runs-on: ubuntu-latest
+    steps:
+        # v4.1.1
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
+      - name: Download actionlint
+        id: download-actionlint
+        run: bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/7fdc9630cc360ea1a469eed64ac6d78caeda1234/scripts/download-actionlint.bash) 1.6.23
+        shell: bash
+      - name: Check workflow files
+        run: ${{ steps.download-actionlint.outputs.executable }} -color
+        shell: bash
+
+  build-test:
+    name: Build and test
+    uses: ./.github/workflows/build-test.yml
+
+  release-uat:
+    name: UAT Release
+    uses: ./.github/workflows/release.yml
+    needs: [ build-test ]
+    if: github.ref == 'refs/heads/master'
+    permissions:
+      contents: read
+      id-token: write
+    with:
+      environment: uat
+
+  release-prd:
+    name: PRD Release
+    uses: ./.github/workflows/release.yml
+    needs: [ build-test, release-uat ]
+    if: github.ref == 'refs/heads/master'
+    permissions:
+      contents: read
+      id-token: write
+    with:
+      environment: prd
