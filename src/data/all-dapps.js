@@ -88,6 +88,12 @@ const categories =  [
                 description: 'Creating deep on-chain liquidity using advanced bonding curves',
                 icon: './images/dapps/curve.fi.png'
             },
+            {
+                name: 'ShapeShift',
+                url: 'https://app.shapeshift.com/',
+                description: 'Track, trade, buy, borrow, and earn. Community owned. Private. Noncustodial. Multichain.',
+                icon: './images/dapps/shapeshift.svg'
+            },
         ],
     },
     {
