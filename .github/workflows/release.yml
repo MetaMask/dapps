@@ -1,0 +1,47 @@
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        description: Environment name
+        type: string
+      aws-region:
+        required: true
+        description: AWS region
+        type: string
+        default: us-east-1
+      aws-role-arn:
+        required: true
+        description: AWS role ARN
+        type: string
+      aws-bucket-name:
+        required: true
+        description: AWS S3 bucket name
+        type: string
+      cloudfront-distribution-id:
+        required: true
+        description: AWS CloudFront distribution ID
+        type: string
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ inputs.environment }}
+    steps:
+      - name: configure AWS credentials
+        # v4.0.1
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ inputs.aws-role-arn }}
+          role-session-name: github-actions
+          aws-region: ${{ inputs.aws-region }}
+      - name: download build artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build
+          path: ./build/
+      - name: Deploy website
+        run: |
+          aws s3 cp ./build/ s3://${{ inputs.aws-bucket-name }}/ --recursive --acl private
+          aws cloudfront create-invalidation --distribution-id ${{ inputs.cloudfront-distribution-id }} --paths "/"
