@@ -5,6 +5,23 @@ on:
         required: true
         description: Environment name
         type: string
+      aws-region:
+        required: true
+        description: AWS region
+        type: string
+        default: us-east-1
+      aws-role-arn:
+        required: true
+        description: AWS role ARN
+        type: string
+      aws-bucket-name:
+        required: true
+        description: AWS S3 bucket name
+        type: string
+      cloudfront-distribution-id:
+        required: true
+        description: AWS CloudFront distribution ID
+        type: string
 jobs:
   deploy:
     name: Deploy
@@ -16,9 +33,9 @@ jobs:
         # v4.0.1
         uses: aws-actions/configure-aws-credentials@010d0da01d0b5a38af31e9c3470dbfdabdecca3a
         with:
-          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
-          role-session-name: ghactionssession
-          aws-region: ${{ vars.AWS_REGION }}
+          role-to-assume: ${{ inputs.aws-role-arn }}
+          role-session-name: github-actions
+          aws-region: ${{ inputs.aws-region }}
       - name: download build artifact
         uses: actions/download-artifact@v3
         with:
@@ -26,5 +43,5 @@ jobs:
           path: ./build/
       - name: Deploy website
         run: |
-          aws s3 cp ./build/ s3://${{ vars.AWS_BUCKET_NAME }}/ --recursive --acl private
-          aws cloudfront create-invalidation --distribution-id ${{ vars.AWS_CF_DISTRIBUTION_ID }} --paths "/"
+          aws s3 cp ./build/ s3://${{ inputs.aws-bucket-name }}/ --recursive --acl private
+          aws cloudfront create-invalidation --distribution-id ${{ inputs.cloudfront-distribution-id }} --paths "/"
