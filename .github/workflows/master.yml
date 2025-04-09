@@ -28,12 +28,17 @@ jobs:
     name: UAT Release
     uses: ./.github/workflows/release.yml
     needs: [ build-test ]
-    if: github.ref == 'refs/heads/master'
+    # Todo Remove After testing
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/cf-cicd'
     permissions:
       contents: read
       id-token: write
     with:
       environment: uat
+      aws-region: us-east-1
+      aws-role-arn: arn:aws:iam::722264665990:role/OIDCGithubProviderRoleMetamaskHome
+      aws-bucket-name: stage.home.metamask.io
+      cloudfront-distribution-id: E1RY04JD0H4SYF
 
   release-prd:
     name: PRD Release
