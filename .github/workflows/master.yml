@@ -49,4 +49,9 @@ jobs:
       contents: read
       id-token: write
     with:
+      #TODO Update
       environment: prd
+      aws-region: us-east-1
+      aws-role-arn: arn:aws:iam::722264665990:role/OIDCGithubProviderRoleMetamaskHome
+      aws-bucket-name: stage.home.metamask.io
+      cloudfront-distribution-id: E1RY04JD0H4SYF
