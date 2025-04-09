@@ -35,9 +35,6 @@
       "import/no-anonymous-default-export": "off"
     }
   },
-  "jest": {
-    "testEnvironment": "jsdom"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
