@@ -29,7 +29,7 @@ jobs:
     uses: ./.github/workflows/release.yml
     needs: [ build-test ]
     # Todo Remove After testing
-    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/cf-cicd'
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/new-cicd-rls'
     permissions:
       contents: read
       id-token: write
