@@ -1,10 +1,10 @@
 on:
   workflow_call:
     inputs:
-      environment:
-        required: true
-        description: Environment name
-        type: string
+      # environment:
+      #   required: true
+      #   description: Environment name
+      #   type: string
       aws-region:
         required: true
         description: AWS region
