@@ -34,7 +34,7 @@ jobs:
       contents: read
       id-token: write
     with:
-      environment: uat
+      #environment: uat
       aws-region: us-east-1
       aws-role-arn: arn:aws:iam::722264665990:role/OIDCGithubProviderRoleMetamaskHome
       aws-bucket-name: stage.home.metamask.io
@@ -50,7 +50,7 @@ jobs:
       id-token: write
     with:
       #TODO Update
-      environment: prd
+      #environment: prd
       aws-region: us-east-1
       aws-role-arn: arn:aws:iam::722264665990:role/OIDCGithubProviderRoleMetamaskHome
       aws-bucket-name: stage.home.metamask.io
