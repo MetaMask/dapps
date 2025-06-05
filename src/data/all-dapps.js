@@ -88,6 +88,13 @@ const categories =  [
                 description: 'Creating deep on-chain liquidity using advanced bonding curves',
                 icon: './images/dapps/curve.fi.png'
             },
+            {
+                name: "Nebula",
+                url: "https://nebula.thirdweb.com/",
+                description:
+                "Thirdweb's AI that reads, writes, analyzes, & executes onchain tasks on all EVM chains",
+                icon: "./images/dapps/nebula.thirdweb.com.png",
+            },
         ],
     },
     {
