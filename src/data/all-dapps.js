@@ -11,6 +11,12 @@ const categories =  [
         color: '#5cd879',
         dapps: [
             {
+                name: 'Coinrule',
+                url: 'https://coinrule.com/',
+                description: 'Launch fully self-custodial onchain automated trading strategies at lightning speed and with one-click UX. Coinrule is backed by Y Combinator',
+                icon: './images/dapps/coinrule.png'
+            },
+            {
                 name: 'Compound',
                 url: 'https://app.compound.finance/',
                 description: 'Earn interest on your ETH',
